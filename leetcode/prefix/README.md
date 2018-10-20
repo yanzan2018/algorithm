@@ -1,2 +1,3 @@
-all prefix problems;
+# Prefix problems
+
 14. Longest Common Prefix
