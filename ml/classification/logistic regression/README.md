@@ -9,3 +9,5 @@ https://gist.github.com/vietjtnguyen/6655020
 http://nbviewer.jupyter.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/logistic_regression.ipynb 
 
 https://beckernick.github.io/logistic-regression-from-scratch/ 
+
+https://github.com/justmarkham/scikit-learn-videos/blob/master/09_classification_metrics.ipynb
