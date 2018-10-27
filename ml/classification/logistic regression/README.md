@@ -14,6 +14,9 @@ https://github.com/justmarkham/scikit-learn-videos/blob/master/09_classification
 
 https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mnist-handwriting-recognition-matplotlib-a6b31e2b166a
 
+https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp/learn/v4/content  theory and implementation
+
+
 
 # interview questions
 describe the formula for logistic regression and how the algorithm is used for binary classification
