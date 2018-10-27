@@ -11,3 +11,5 @@ http://nbviewer.jupyter.org/github/rasbt/python-machine-learning-book/blob/maste
 https://beckernick.github.io/logistic-regression-from-scratch/ 
 
 https://github.com/justmarkham/scikit-learn-videos/blob/master/09_classification_metrics.ipynb
+
+https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mnist-handwriting-recognition-matplotlib-a6b31e2b166a
