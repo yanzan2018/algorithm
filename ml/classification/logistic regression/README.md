@@ -16,3 +16,6 @@ https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mn
 
 
 # interview questions
+describe the formula for logistic regression and how the algorithm is used for binary classification
+https://www.udemy.com/data-science-career-guide-interview-preparation/learn/v4/t/lecture/8669174?start=0
+
