@@ -22,3 +22,5 @@ https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp/lear
 describe the formula for logistic regression and how the algorithm is used for binary classification
 https://www.udemy.com/data-science-career-guide-interview-preparation/learn/v4/t/lecture/8669174?start=0
 
+https://www.udemy.com/data-science-supervised-machine-learning-in-python/learn/v4/content
+
