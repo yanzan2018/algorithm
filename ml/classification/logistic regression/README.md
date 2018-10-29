@@ -1,4 +1,4 @@
-logistic regression 
+logistic regression python practise 
 
 https://github.com/justmarkham/scikit-learn-videos
 
@@ -16,6 +16,11 @@ https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mn
 
 https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp/learn/v4/content  theory and implementation
 
+# theory
+
+https://www.udemy.com/data-science-logistic-regression-in-python/learn/v4/content
+
+https://www.udemy.com/data-science-logistic-regression-in-python/learn/v4/t/lecture/3963002?start=0 neuron 
 
 
 # interview questions
@@ -23,4 +28,6 @@ describe the formula for logistic regression and how the algorithm is used for b
 https://www.udemy.com/data-science-career-guide-interview-preparation/learn/v4/t/lecture/8669174?start=0
 
 https://www.udemy.com/data-science-supervised-machine-learning-in-python/learn/v4/content
+
+
 
