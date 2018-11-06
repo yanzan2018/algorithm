@@ -1,1 +1,5 @@
 backtrack 是explicitly remove，但是dfs是implicitly 地回溯
+
+Permutation的从根节点到叶子节点的路径是一个solution，combination sum从根节点到叶子节点的路径不一定是一个solution。
+
+subset的路径上的任何一点都是solution。
