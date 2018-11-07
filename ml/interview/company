@@ -1,0 +1,5 @@
+on-site 问题：
+1） 给一个数据，做一些data science preprocessing. 然后预测一个target column.
+2) talk about your research and interesting projects
+3) A. why ericsson. B what you see yourself after 5 years in Ericsson. C. how to approach difficult problems.
+onsite主要是是数据分析和建模，第二轮是research , and interesting projects you have done.  第三轮是behavior questions. 就是很常见的那种。只是稍微提到了一点CNN， 还有如何知道CNN是不是正常工作，像overfit, 这种问题。
