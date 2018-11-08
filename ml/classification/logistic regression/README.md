@@ -21,6 +21,8 @@ https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp/lear
 https://www.udemy.com/data-science-logistic-regression-in-python/learn/v4/content
 
 https://www.udemy.com/data-science-logistic-regression-in-python/learn/v4/t/lecture/3963002?start=0 neuron 
+Continuous variables including 
+
 
 
 # interview questions
