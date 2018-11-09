@@ -6,3 +6,4 @@ https://www.tensorflow.org/tutorials/keras/overfit_and_underfit
 
 ## validation 
 https://dzone.com/articles/machine-learning-validation-techniques
+https://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/79324352  中文
