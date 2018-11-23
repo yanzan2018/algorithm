@@ -9,3 +9,5 @@ confusing matrix:
 gt/prediction  YES NO
 YES
 NO
+
+https://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/    confusing matrix like scikit learn 
