@@ -4,3 +4,5 @@
  In random forest, Individual tree is built on a subset of the features and individual tree is built on a subset of observations
  max_depth is a hyperparameter in Gradient Boosting: Lower is better parameter in case of same validation accuracy; Increase the value of max_depth may overfit the data
  
+ https://www.udemy.com/decision-trees-for-machine-learning/learn/v4/overview   decision tree algorithm id3/c4.5/cart
+ 
