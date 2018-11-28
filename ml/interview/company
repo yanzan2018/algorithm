@@ -3,3 +3,9 @@ on-site 问题：
 2) talk about your research and interesting projects
 3) A. why ericsson. B what you see yourself after 5 years in Ericsson. C. how to approach difficult problems.
 onsite主要是是数据分析和建模，第二轮是research , and interesting projects you have done.  第三轮是behavior questions. 就是很常见的那种。只是稍微提到了一点CNN， 还有如何知道CNN是不是正常工作，像overfit, 这种问题。
+
+
+1 what is the linear regression assumption? 
+2 inference the maxmum likelihood of logistic regression
+3 when the data sets is imbalanced, and the data is numerical, how can we balance it.  how can we generate more sample from minority classes. 
+4 what is the hyper parameter for SVM. like C, gamma, kernal?
