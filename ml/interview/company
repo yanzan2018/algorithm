@@ -9,3 +9,5 @@ onsite主要是是数据分析和建模，第二轮是research , and interesting
 2 inference the maxmum likelihood of logistic regression
 3 when the data sets is imbalanced, and the data is numerical, how can we balance it.  how can we generate more sample from minority classes. 
 4 what is the hyper parameter for SVM. like C, gamma, kernal?
+5 for linear regression(logistic regression), for categorical variable, we should use pd.get_dummies(drop_first=True) to tranform the data. for numerial data, we should do missing data imputation. and then nomalize/scaling the data. 
+6 method for dimension reduction, explain what is PCA
