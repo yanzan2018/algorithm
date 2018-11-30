@@ -12,6 +12,9 @@ onsite主要是是数据分析和建模，第二轮是research , and interesting
 5 for linear regression(logistic regression), for categorical variable, we should use pd.get_dummies(drop_first=True) to tranform the data. for numerial data, we should do missing data imputation. and then nomalize/scaling the data. 
 6 method for dimension reduction, explain what is PCA
 7 how to feed data into word2vec to get vector? 
+8 what is formula to detect fake followers to improve domain expert recommendation
+9 climb staris programming
+
 
 
 python coding:
