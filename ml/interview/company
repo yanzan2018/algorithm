@@ -4,16 +4,25 @@ on-site 问题：
 3) A. why ericsson. B what you see yourself after 5 years in Ericsson. C. how to approach difficult problems.
 onsite主要是是数据分析和建模，第二轮是research , and interesting projects you have done.  第三轮是behavior questions. 就是很常见的那种。只是稍微提到了一点CNN， 还有如何知道CNN是不是正常工作，像overfit, 这种问题。
 
-
+machine learning theory:
 1 what is the linear regression assumption? 
-2 inference the maxmum likelihood of logistic regression
-3 when the data sets is imbalanced, and the data is numerical, how can we balance it.  how can we generate more sample from minority classes. 
-4 what is the hyper parameter for SVM. like C, gamma, kernal?
-5 for linear regression(logistic regression), for categorical variable, we should use pd.get_dummies(drop_first=True) to tranform the data. for numerial data, we should do missing data imputation. and then nomalize/scaling the data. 
-6 method for dimension reduction, explain what is PCA
-7 how to feed data into word2vec to get vector? 
-8 what is formula to detect fake followers to improve domain expert recommendation
-9 climb staris programming
+2 for both linear regression and logistic regression, for categorical variable, we should use pd.get_dummies(drop_first=True) to tranform the data. for numerial data, we should do missing data imputation. and then nomalize/scaling the data. 
+3 inference the maxmum likelihood of logistic regression and its loss fuction. 
+4 what does the hyper parameter mean for SVM. like C, gamma, kernal?
+5 method for dimension reduction, explain what is PCA
+6 what is the metrics for classification and regression?
+
+application:
+1 when the data sets is imbalanced, and the data is numerical, how can we balance it.  how can we generate more sample from minority numerical classes. 
+2 like binary classification, like credict card fake detection, if we take care one pariticular class mislabel, how can we deal with this situation?
+7 what does it mean tf and idf? how to feed data into word2vec to get vector representation? 
+
+project: 
+what is formula to detect fake followers to improve domain expert recommendation
+what is the challenge for web user classification? 
+
+programming: 
+climb staris programming
 
 
 
