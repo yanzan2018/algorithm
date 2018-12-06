@@ -1,5 +1,7 @@
 3. Longest Substring Without Repeating Characters
 
+https://www.youtube.com/watch?v=sZosU8JjVaA brute force and sliding windows
+
 1  双指针法
 idea: 刚开始一直往后移动， 直到碰到重复值，然后开始压缩目前的子串，直到出现一个新的满足条件的无重复字符的子串。压缩时开始指针一个一个地往后移。
 子串的开始指针 ： 当结尾指针碰到重复值时，开始更新开始指针。
