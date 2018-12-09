@@ -17,7 +17,9 @@ idea:
 
 实现方法： 
 ### 1  两个指针start ,end, 用一个hashset存储目前的符合条件的子串的字符集合。当碰到重复值时，删掉hashset的当前start指向的元素，然后start逐个向后移动，直到遇到重复的元素，然后删除hashset后，start往后移一位。（最好先删除hashset的值，再移动start指针。否则要先把start指针的值先存下来。）
+https://leetcode.com/problems/longest-substring-without-repeating-characters/description/  
 ### 2  hashmap法   
+https://leetcode.com/submissions/detail/194092691/
 使用一个hashmap存储元素和其对应的位置，当发现重复值时，更新hashmap此元素的索引值为当前的。trick的地方是需要跟新start为目前start和此重复元素的之前位置的索引+1的较大的值。这里的hashmap存储的值相当于start指针。
 相对1的实现，当发现重复值时时，可以直接跳到下一个start的位置，但是1必须挨个移动start指针。2 trick的地方是当前发现重复值的之前出现位置可能比start小，这时就还是要取现在的start。
 test case: 
