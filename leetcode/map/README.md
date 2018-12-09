@@ -25,3 +25,6 @@ https://leetcode.com/submissions/detail/194092691/
 test case: 
 更新start时，当第一个重复值出现时，一定是start更新到这个值前一次出现的位置加1；当后续又有重复值出现时，如果这个重复值比当前start的位置要早，显然start位置不用更新。
 如abcca  当c出现时，start位置从0更新到3；当a出现时，start位置仍然是3。
+
+因为双指针法在发现重复元素时，会逐个删除hashset的值，所以下面的
+maxLength = Math.max(end - start + 1 , maxLength);  只会出现一次，因为它会执行到 not contains的这个分支。
