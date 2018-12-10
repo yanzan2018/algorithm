@@ -23,6 +23,29 @@ A Reader is designed for character streams. If the information you are reading i
         Deque  -> LinkedList
  ### Iterable interface <java.lang>   (VS Interface Iterator in java. util)
  
+ ## overload/override
+ ### overload https://www.geeksforgeeks.org/different-ways-method-overloading-java/
+ ### override https://www.geeksforgeeks.org/overriding-in-java/
+ 
+ package test.com;
+
+public class OverloadTest {
+	public int foo() { return 10; } 
+	  
+    // compiler error: foo() is already defined 
+    //public char foo() { return 'a'; } 
+	//right
+	//public int foo(int a) {return 11;}
+	public char foo(int a) {return 12;}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+ 
  ## interview exercise
  
  https://tests4geeks.com/java-interview-questions/
