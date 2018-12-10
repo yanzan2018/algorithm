@@ -30,3 +30,20 @@ test case:
 
 因为双指针法在发现重复元素时，会逐个删除hashset的值，所以下面的
 maxLength = Math.max(end - start + 1 , maxLength);  只会出现一次，因为它会执行到 not contains的这个分支。
+
+# 205. Isomorphic Strings
+返回true需要满足两个条件：
+
+1、不能出现s中的两个不同字符对应到t中同一个字符
+ if (!seen.containsKey(schars[i])) {
+                // avoid many to one
+                if (seen.containsValue(tchars[i])) {
+                    return false;
+                }
+                
+2、不能出现s中的一个字符对应到t中两个不同的字符
+ // avoid one to many
+                if (seen.get(schars[i]) != tchars[i]) {
+                    return false;
+                }
+
