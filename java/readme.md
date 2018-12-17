@@ -14,6 +14,9 @@ https://javarevisited.blogspot.com/2010/10/why-string-is-immutable-or-final-in-j
 
 A Reader is designed for character streams. If the information you are reading is all text, then the Reader will take care of the character decoding for you and give you unicode characters from the raw input stream. If you are reading any type of text, this is the stream to use.
 
+## type casting
+We can convert int to double in java using assignment operator. There is nothing to do extra because lower type can be converted to higher type implicitly.
+
  ## Common Interface
   ### Collection interface <java.util>   (VS class Collections)
       Sub interface: List, Set, Deque
