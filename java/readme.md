@@ -17,6 +17,8 @@ A Reader is designed for character streams. If the information you are reading i
 ## type casting
 We can convert int to double in java using assignment operator. There is nothing to do extra because lower type can be converted to higher type implicitly.
 
+## Java对象数组在new的时候不要写泛型，但在定义的时候需要写。
+
  ## Common Interface
   ### Collection interface <java.util>   (VS class Collections)
       Sub interface: List, Set, Deque
