@@ -5,3 +5,5 @@ it does not matter for duplicate in the binary tree, because we compare root == 
 Tree traversal could be preorder, or postorder, which can be implemented by recursive(dfs) or iterative
 if recursive implementation, will be base rule(base rule is not different the node operation)
 LCA can be extended to directed acyclic graphs
+
+
