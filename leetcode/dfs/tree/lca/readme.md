@@ -1,3 +1,5 @@
+树的题大多是用递归dfs，用递归就需要看待每个结点都是一样的能得到结果
+
 235. Lowest Common Ancestor of a Binary Search Tree
 time complexity O(h)
 top down (pre order)
@@ -10,5 +12,10 @@ it does not matter for duplicate in the binary tree, because we compare root == 
 Tree traversal could be preorder, or postorder, which can be implemented by recursive(dfs) or iterative
 if recursive implementation, will be base rule(base rule is not different the node operation)
 LCA can be extended to directed acyclic graphs
+
+
+111. Minimum Depth of Binary Tree
+
+关键是要单独处理结点只有一个分支的情况。这是和104. Maximum Depth of Binary Tree最不相同的地方。
 
 
