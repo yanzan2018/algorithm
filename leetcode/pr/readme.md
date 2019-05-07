@@ -6,4 +6,6 @@ if (lists == null || lists.length == 0) {
             return null;
         }
  否则，当test case是[]时，PriorityQueue的构造函数采取不同的形式，返回的值不一样。PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);可以过，也返回[]。但是PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.length, (a, b) -> a.val - b.val);就会返回null。为了避免这种tricky的写法，最好一开始就养成习惯对参数进行判断。
+            
+https://www.youtube.com/watch?v=Uz4fTr34270  laioffer视频里对比了pq的解法和它本质上是在类似merge two sorted list解法的优化和区别。
   
