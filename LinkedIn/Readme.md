@@ -2,7 +2,7 @@
 47 Permutations II
 
 339. Nested List Weight Sum  
-why interface has constructors?
+
 364. Nested List Weight Sum II
 
 12. Integer to Roman
