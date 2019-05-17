@@ -24,3 +24,8 @@ https://www.cnblogs.com/grandyang/p/6185339.html
 5. Longest Palindromic Substring
 516. Longest Palindromic Subsequence
 352. Data Stream as Disjoint Intervals 
+
+
+76. Minimum Window Substring 
+34. Find First and Last Position of Element in Sorted Array
+296. Best Meeting Point 
