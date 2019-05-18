@@ -29,3 +29,5 @@ https://www.cnblogs.com/grandyang/p/6185339.html
 76. Minimum Window Substring 
 34. Find First and Last Position of Element in Sorted Array
 296. Best Meeting Point 
+
+380. Insert Delete GetRandom O(1)
