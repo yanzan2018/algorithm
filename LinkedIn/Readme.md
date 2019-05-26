@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=2MmGzdiKR9Y
 152. Maximum Product Subarray  
 https://www.youtube.com/watch?v=AtzfZHb35YI  
 与53很类似，也是动态规划。区别在于除了保存一个目前的最大值，还要保存一个目前的最小值，因为如果当前元素为负数，则最大值为目前的最小值乘以当前数。
-
+https://leetcode.com/submissions/detail/231575820/   注意temp的用处。
 
 170 
 
