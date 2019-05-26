@@ -15,7 +15,12 @@ https://www.cnblogs.com/grandyang/p/6185339.html
 272. Closest Binary Search Tree Value II 
 658. Find K Closest Elements  
 
-53
+53. Maximum Subarray  
+https://www.youtube.com/watch?v=7J5rs56JBs8
+关键点是当前这个元素之前的和是正数还是负数，如果是负数，就丢弃之前的累加和，重新开始。
+https://www.youtube.com/watch?v=2MmGzdiKR9Y 
+第12分钟  
+
 152
 
 
