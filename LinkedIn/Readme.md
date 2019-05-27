@@ -47,6 +47,19 @@ ______C_____A_____P_______B______D______
 注意因为是行扫描的，所以对于行这个维度，是自然有序的；而对于列这个维度，则需要排序。
 
 380. Insert Delete GetRandom O(1)
+Zig-Zag print binary tree
+https://www.glassdoor.com/Interview/Transform-one-given-string-of-length-n-into-another-given-string-of-the-same-length-using-a-series-of-elemental-transformat-QTN_2707446.htm  
+write a function to sample from a multinomial distribution  
+
+k means /naive bayesian/knn 
+https://medium.com/acing-ai/linkedin-ai-interview-questions-acing-the-ai-interview-41028c4b0704 
 
 415
+
+
+
+Given a random generator function that return 0 or 1 with equal probability, create another random function that will return any value between [0,6] with equal probability  
+https://stackoverflow.com/questions/137783/expand-a-random-range-from-1-5-to-1-7
+Talk about SVM, overfitting, classification methods?
+Also, a coding question to use binary search in a sorted array!  
 
