@@ -28,6 +28,9 @@ https://leetcode.com/submissions/detail/231575820/   注意temp的用处。
 
 170 
 
+173. Binary Search Tree Iterator 
+这道题的关键点是要求空间复杂度是O（h），这个只能用栈来实现。否则就用数组，直接用中序遍历完整颗树，存到数组中，但是空间复杂度就是O（n），虽然每次得到最小数的时间复杂度也是O（1）。
+
 5. Longest Palindromic Substring
 516. Longest Palindromic Subsequence
 352. Data Stream as Disjoint Intervals 
