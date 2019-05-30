@@ -34,6 +34,8 @@ https://leetcode.com/submissions/detail/231575820/   注意temp的用处。
 https://github.com/awangdev/LintCode/blob/master/Java/Binary%20Search%20Tree%20Iterator.java
 https://rli40.expressions.syr.edu/2016/02/understandings-for-leetcode-binary-search-tree-iterator/
 https://github.com/awangdev/LintCode/blob/master/Java/Binary%20Search%20Tree%20Iterator.java
+https://www.jiuzhang.com/solution/binary-search-tree-iterator/
+不管把Push所有的左孩子放在Next还是hasNext（需要多一个全局变量next），每个节点都是只需要放进栈里去一次就好，所以每次当栈顶元素出栈时，不管当push有没有发生的时候，最后对整棵树来说总的发生次数是n，所以对于每次调用next或hasnext，分摊的时间复杂度就会是O（1）。
 
 5. Longest Palindromic Substring
 516. Longest Palindromic Subsequence
@@ -69,4 +71,6 @@ Given a random generator function that return 0 or 1 with equal probability, cre
 https://stackoverflow.com/questions/137783/expand-a-random-range-from-1-5-to-1-7
 Talk about SVM, overfitting, classification methods?
 Also, a coding question to use binary search in a sorted array!  
+试想连续三次不成功的概率(9/49的三次方)为极小，也就是说基本上调用rand5常数次就可以得到解，所以时间复杂度可以理解为O(1)。
+
 
