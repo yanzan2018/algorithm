@@ -40,7 +40,8 @@ https://www.jiuzhang.com/solution/binary-search-tree-iterator/
 5. Longest Palindromic Substring
 516. Longest Palindromic Subsequence
 352. Data Stream as Disjoint Intervals 
-
+74. Search a 2D Matrix   
+其实就是普通的二份搜索，唯一改变的是需要把mid的值还原为矩阵的行列索引。
 
 76. Minimum Window Substring 
 34. Find First and Last Position of Element in Sorted Array
