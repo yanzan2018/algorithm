@@ -74,4 +74,12 @@ Talk about SVM, overfitting, classification methods?
 Also, a coding question to use binary search in a sorted array!  
 试想连续三次不成功的概率(9/49的三次方)为极小，也就是说基本上调用rand5常数次就可以得到解，所以时间复杂度可以理解为O(1)。
 
+Given a random generator function that return 0 or 1 with  equal probability, create another random function that will return any value between [0,6] with equal probability
+
+https://stackoverflow.com/questions/137783/expand-a-random-range-from-1-5-to-1-7
+
+http://www.mytechinterviews.com/equal-probability-between-1-and-7
+
+https://www.geeksforgeeks.org/implement-random-0-6-generator-using-the-given-random-0-1-generator/
+
 
