@@ -67,7 +67,7 @@ https://medium.com/acing-ai/linkedin-ai-interview-questions-acing-the-ai-intervi
 415
 
 
-
+#random 
 Given a random generator function that return 0 or 1 with equal probability, create another random function that will return any value between [0,6] with equal probability  
 https://stackoverflow.com/questions/137783/expand-a-random-range-from-1-5-to-1-7
 Talk about SVM, overfitting, classification methods?
@@ -81,5 +81,30 @@ https://stackoverflow.com/questions/137783/expand-a-random-range-from-1-5-to-1-7
 http://www.mytechinterviews.com/equal-probability-between-1-and-7
 
 https://www.geeksforgeeks.org/implement-random-0-6-generator-using-the-given-random-0-1-generator/
+
+The coding question was about random number generators (528. Random Pick with Weight  & 398. Random Pick Index )
+https://www.geeksforgeeks.org/random-number-generator-in-arbitrary-probability-distribution-fashion/
+
+398. Random Pick Index 
+https://leetcode.com/submissions/detail/233232084/  
+因为构造函数里只调用一次，所以时间复杂度是n没什么关系。但是Pick函数调用了多次，pick函数的时间复杂度是O（1）。
+全局变量比如 
+Map<Integer, List<Integer>> map;
+Random r ;
+的初始化放在构造函数中。
+ 此外，理解 Map<Integer, List<Integer>> map = new HashMap<>(); 注意其中map的值是List<Integer>类型,而不是ArrayList<Integer>或LinkedList<Integer>。类似 int[] nums = new int[10] 而不能是int[] nums = new Integer[10],但是nums[0] = new Integer(3) 是可以的。
+  computeIfAbsent是Java8中的，就是一个和put功能差不多的算子，都是往map里面添加数据。不同的是，put只是简单的添加，当map中存在对应Key的时候，put会覆盖掉原本的value值。而computeIfAbsent顾名思义，会检查map中是否存在Key值，如果存在会检查value值是否为空，如果为空就会将K值赋给value。
+  如果map里没有这个key，那么就按照后面的这个function添加对应的key和value；如果有，
+  https://blog.csdn.net/charKim/article/details/81234479  测试computeIfAbsent
+  https://www.cnblogs.com/inspirationBoom/p/9994932.html  computeIfAbsent源码解析
+  
+  
+  
+  
+
+497. Random Point in Non-overlapping Rectangles
+
+478. Generate Random Point in a Circle
+
 
 
