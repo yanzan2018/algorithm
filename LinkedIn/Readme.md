@@ -67,7 +67,7 @@ https://medium.com/acing-ai/linkedin-ai-interview-questions-acing-the-ai-intervi
 415
 
 
-#random 
+# random 
 Given a random generator function that return 0 or 1 with equal probability, create another random function that will return any value between [0,6] with equal probability  
 https://stackoverflow.com/questions/137783/expand-a-random-range-from-1-5-to-1-7
 Talk about SVM, overfitting, classification methods?
