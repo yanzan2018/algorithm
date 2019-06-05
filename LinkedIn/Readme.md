@@ -98,11 +98,21 @@ Random r ;
   https://blog.csdn.net/charKim/article/details/81234479  测试computeIfAbsent
   https://www.cnblogs.com/inspirationBoom/p/9994932.html  computeIfAbsent源码解析
   
-  528. Random Pick with Weight
+  528. Random Pick with Weight   要求产生一个随机生成器来按给定权重（概率）选中相应位置。
+  做法是把概率分布函数转化为累计概率分布函数。然后通过随机数，进行二分查找。
+  https://blog.csdn.net/fuxuemingzhu/article/details/81807215  upper bound
+  https://segmentfault.com/a/1190000016978735  
+  https://zxi.mytechroad.com/blog/math/leetcode-880-random-pick-with-weight/  
   对于leetcode上的题目中的约束，
   比如给定一个数组，如果约束中n是20以内，那么算法的时间复杂度是2的n次方，或n的阶乘也可能过；但是如果n在100到1000之间，则n平方的算法可能能过；对于5000到10000，这一般要O（n）的时间复杂度才能过；
   对于w[i]要求大小，是因为这道题目需要求前缀和，太大会溢出。
   PickIndex函数 will be called at most 10000 times. 是希望其时间复杂度越低越好。
+  
+  http://massivealgorithms.blogspot.com/2018/12/leetcode-528-random-pick-with-weight.html follow up
+  
+  https://www.careercup.com/question?id=12426697 
+  
+  https://stackoverflow.com/questions/18793852/find-random-numbers-in-a-given-range-with-certain-possible-numbers-excluded
   
   
 
