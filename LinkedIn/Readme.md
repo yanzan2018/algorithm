@@ -114,6 +114,30 @@ Random r ;
   
   https://stackoverflow.com/questions/18793852/find-random-numbers-in-a-given-range-with-certain-possible-numbers-excluded
   
+  tricky的地方在于在产生随机数时为什么需要加1。
+  例如： w : [2,3,5]
+prefixSum: [2, 5, 10]
+random.nextInt(10) + 1 生成的数如下：
+1,2
+3,4,5
+6,7,,8,9,10
+当在prefixSum中search需要插入位置的时候更方便。
+对比 random.nextInt(10) 生成的数如下：
+0, 1
+2, 3,4               //比如2，使用常规的二份查找不容易定位在索引为0的位置。
+5,6, 7,8,9
+也可以使用random.nextInt(10)+w[0]  生成的数如下：
+2,3,
+4,5,6,
+7,,8,9,10,11   在使用二分查找的时候和上面是类似的问题。
+接下来二分查找就是35. Search Insert Position
+注意，查找元素和索引是不同的写法。
+对于查找索引，使用 left<right是最好的写法，因为不会越界。因为left++,最多到right,所以肯定是不会越界的；right也是一样的道理。
+当target的值小于Mid位置上的值时，但是它可能会比[0..mid-1]的元素都大，所以插入位置仍然有可能是mid，这样right = mid；但是对于target的值大于mid位置上的元素时，因为至少会是mid+1（就是说target比mid右边的区间范围的元素值都小），所以不用保留mid,所以left =mid + 1; 跳出循环时left == right，所以返回left或right都可以。
+经典写法如下：
+https://leetcode.com/problems/search-insert-position/discuss/15110/Very-concise-and-efficient-solution-in-Java
+
+
   
 
 497. Random Point in Non-overlapping Rectangles
