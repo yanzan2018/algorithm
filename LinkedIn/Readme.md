@@ -114,6 +114,8 @@ Random r ;
   
   https://stackoverflow.com/questions/18793852/find-random-numbers-in-a-given-range-with-certain-possible-numbers-excluded
   
+ 
+  
   tricky的地方在于在产生随机数时为什么需要加1。
   例如： w : [2,3,5]
 prefixSum: [2, 5, 10]
@@ -130,12 +132,26 @@ random.nextInt(10) + 1 生成的数如下：
 2,3,
 4,5,6,
 7,,8,9,10,11   在使用二分查找的时候和上面是类似的问题。
-接下来二分查找就是35. Search Insert Position
+接下来二分查找就是35. Search Insert Position 
 注意，查找元素和索引是不同的写法。
 对于查找索引，使用 left<right是最好的写法，因为不会越界。因为left++,最多到right,所以肯定是不会越界的；right也是一样的道理。
 当target的值小于Mid位置上的值时，但是它可能会比[0..mid-1]的元素都大，所以插入位置仍然有可能是mid，这样right = mid；但是对于target的值大于mid位置上的元素时，因为至少会是mid+1（就是说target比mid右边的区间范围的元素值都小），所以不用保留mid,所以left =mid + 1; 跳出循环时left == right，所以返回left或right都可以。
 经典写法如下：
 https://leetcode.com/problems/search-insert-position/discuss/15110/Very-concise-and-efficient-solution-in-Java
+
+35. Search Insert Position  
+https://leetcode.com/problems/search-insert-position/discuss/15110/Very-concise-and-efficient-solution-in-Java
+这道题和528中做二分查找不一样的是，528中的要查找的target的值，是在这个目标数组里的，而这道题有可能是在这个目标数组之外的，比如会插入到目标数组的第一个位置（即比目标数组的最后一个元素还小），或目标数组的长度的位置（即比目标数组的最后一个元素还大）。
+这就导致了两者的写法略有差别，35中high = nums.length。
+二份查找就是在不断地减小区间范围，但是最后一定会在一个相邻的区间，这样left,right就相邻了，但是因为计算的bias（整数除法）,mid是等于left的,所以如果mid的值不等于target，则left更新为Mid+1,最后left==rigth，不再进入循环。
+这样比如target是一个比数组里任何元素都大的数，则最后low = nums.length - 1, high = nums.length，最后mid位置上的值(即数组最后一个元素)还是小于target，这样Low会更新成mid+1，这样left == right，插入位置仍然是left/right。 
+用二分查找索引和查找值是不一样的。
+如果是查找值，用同样的框架比如while (left < right)，但是里面就不应该是left = mid了，而是Left = mid - 1。因为mid是bias左边的值的，所以在跳出循环后right的值有可能越界。因为如果target比数组里最小的元素都要小，那么当left和right相邻是，mid的值是数组的第一个元素，target仍然小于它，则right = mid - 1，这样right就越界了，但是Left是不会越界的。所以最安全的方式，用这种框架时，跳出循环后使用left的值来做判断， 即 return nums[left] != target。同样的道理，如果设计mid的值的bias是往右，则target是大于数组中最大值的时候，left也会越界，这是就适合用right来做判断了。
+为了简化起见，如果是查找值，就用while (left <=right),这样出来就返回false就完了（因为在循环内如果有相等就已经直接返回为true了）。而如果查找索引，就使用while (left<right)，这样出来就直接返回Left了。
+
+
+
+
 
 
   
@@ -143,6 +159,8 @@ https://leetcode.com/problems/search-insert-position/discuss/15110/Very-concise-
 497. Random Point in Non-overlapping Rectangles
 
 478. Generate Random Point in a Circle
+
+ 153. Find Minimum in Rotated Sorted Array 
 
 
 
