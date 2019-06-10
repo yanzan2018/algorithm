@@ -171,9 +171,42 @@ https://leetcode.com/problems/search-insert-position/discuss/15110/Very-concise-
 对于二份搜索的题目，一定要注意每种不同situation的corner case,这导致了其在同一个框架下细节的差别。
 
 https://www.cnblogs.com/grandyang/p/6854825.html  二分查找总结
+https://segmentfault.com/a/1190000016825704?utm_source=tag-newest    二分查找总结
 sqrt
 注意right = x ，而不是right = x - 1。 
 https://leetcode.com/submissions/detail/234831540/ 34. Find First and Last Position of Element in Sorted Array 的这种写法的找右边界。
+
+311. Sparse Matrix Multiplication
+https://leetcode.com/problems/sparse-matrix-multiplication/discuss/76154/Easiest-JAVA-solution 注意暴力的解法和tricky解法的区别。
+暴力解是
+for m
+ for n
+  for k 
+  
+ for(int i = 0; i < m; i++) {
+            for(int k = 0; k < n; k++) { 
+                if (A[i][k] != 0) {        //如下case，比如A[0][1] == 0 ,则矩阵B的第二行都不会与这个数相乘，这样虽然和暴力的时间复杂度相同，但是可以剪很多枝
+                    for (int j = 0; j < nB; j++) {
+                        if (B[k][j] != 0) C[i][j] += A[i][k] * B[k][j];
+                    }
+                }
+            }
+        }
+        
+        
+case:  Input:
+
+A = [
+  [ 1, 0, 0],
+  [-1, 0, 3]
+]
+
+B = [
+  [ 7, 0, 0 ],
+  [ 0, 0, 0 ],
+  [ 0, 0, 1 ]
+]
+
 
 
 
