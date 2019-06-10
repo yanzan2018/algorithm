@@ -165,11 +165,15 @@ https://leetcode.com/problems/search-insert-position/discuss/15110/Very-concise-
 为了简化起见，如果是查找值，就用while (left <=right),这样出来就返回false就完了（因为在循环内如果有相等就已经直接返回为true了），而如果还是用while(left < right)这个框架，则需要判断nums[left]是否等于target，如果等于，则返回true，否则false。而如果查找索引，就使用while (left<right)，这样出来就直接返回Left了。
 34. Find First and Last Position of Element in Sorted Array
 做两次binary search，一次找到最左边，一次找到最右边。
-在搜索最左边的时候，当发现相等的情况时，需要并入到target < nums[mid]的分支里，因为我们需要尽量搜索最左边的范围。因为可能除了此时的mid，我们再也找不到与target相等的值了，所以在更新索引时需要right = mid。这样如果当前位置的mid的值等于target，它会进入到上述分支，right = mid，比如在往左找是，得到的mid的值比target更小，这是会进入另一个分支，更新left= mid+1，这样无论如何，当停止循环即left = right时，都会有left的值指向target最左边的值（如果target的值在数组中存在的话）。而对于搜索最右边的边界时，其最后跳出的位置(left == right)， 如果target正好在数组的最后一个位置，那么left就是它本身，否则就是在最后一个target值的稍后一个位置。
+在搜索最左边的时候，当发现相等的情况时，需要并入到target < nums[mid]的分支里，因为我们需要尽量搜索最左边的范围。因为可能除了此时的mid，我们再也找不到与target相等的值了，所以在更新索引时需要right = mid。这样如果当前位置的mid的值等于target，它会进入到上述分支，right = mid，比如在往左找是，得到的mid的值比target更小，这是会进入另一个分支，更新left= mid+1，这样无论如何，当停止循环即left = right时，都会有left的值指向target最左边的值（如果target的值在数组中存在的话）。而对于搜索最右边的边界时，使用mid+1,是因为其查找的是第一个大于或等于target值的位置。其最后跳出的位置(left == right)， 如果target正好在数组的最后一个位置，那么left就是它本身，否则就是在最后一个target值的稍后一个位置。
 简写做法是，查找右边bound的时候其实就是找插入位置那道题（35），即找到比target大的第一个元素的位置，然后这个位置的前面一个位置就是target的右边bound。
 
 对于二份搜索的题目，一定要注意每种不同situation的corner case,这导致了其在同一个框架下细节的差别。
+
+https://www.cnblogs.com/grandyang/p/6854825.html  二分查找总结
 sqrt
+注意right = x ，而不是right = x - 1。 
+https://leetcode.com/submissions/detail/234831540/ 34. Find First and Last Position of Element in Sorted Array 的这种写法的找右边界。
 
 
 
