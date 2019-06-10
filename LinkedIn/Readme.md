@@ -144,25 +144,32 @@ leetcode里binary search的题目大多数是查找位置/索引，查找值的�
 对于查找索引，使用框架如下：
 while (left< right) {
 ...
-if (target < nums[mid]) {
-right = mid-1;
+  if (target < nums[mid]) {
+    right = mid;  //不能写right = mid - 1; 因为这样跳出循环时可能越界。
+  }
+  else if (target > nums[mid]) {
+    left = mid+1;
+  }
 }
-else if (target > nums[mid]) {
-left = mid;
-}
-}
+以上写法是因为mid的计算是bias左边的位置的，所以left = mid+1是一定不会越界的，但是right = mid - 1是有可能越界的，因为比如left和right相邻了，left在数组的第一个位置，这时候Mid是等于Left的位置，但是mid-1就越界了。
 循环跳出后，根据情况看需不需要执行任何判断操作。
 35. Search Insert Position  
 https://leetcode.com/problems/search-insert-position/discuss/15110/Very-concise-and-efficient-solution-in-Java
 这道题和528中做二分查找不一样的是，528中的要查找的target的值，是在这个目标数组里的，而这道题有可能是在这个目标数组之外的，比如会插入到目标数组的第一个位置（即比目标数组的最后一个元素还小），或目标数组的长度的位置（即比目标数组的最后一个元素还大）。
 这就导致了两者的写法略有差别，35中high = nums.length。
-二份查找就是在不断地减小区间范围，但是最后一定会在一个相邻的区间，这样left,right就相邻了，但是因为计算的bias（整数除法）,mid是等于left的,所以如果mid的值不等于target，则left更新为Mid+1,最后left==rigth，不再进入循环。
+二份查找就是在不断地减小区间范围，但是最后一定会在一个相邻的区间，这样left,right就相邻了，但是因为计算的bias（整数除法）,mid是等于left的,所以如果mid的值不等于target，则left更新为Mid+1或者right更新为mid,最后left==rigth，不再进入循环。
 这样比如target是一个比数组里任何元素都大的数，则最后low = nums.length - 1, high = nums.length，最后mid位置上的值(即数组最后一个元素)还是小于target，这样Low会更新成mid+1，这样left == right，插入位置仍然是left/right。 
 用二分查找索引和查找值是不一样的。
-如果是查找值，用同样的框架比如while (left < right)，但是里面就不应该是left = mid了，而是Left = mid - 1。因为mid是bias左边的值的，所以在跳出循环后right的值有可能越界。因为如果target比数组里最小的元素都要小，那么当left和right相邻是，mid的值是数组的第一个元素，target仍然小于它，则right = mid - 1，这样right就越界了，但是Left是不会越界的。所以最安全的方式，用这种框架时，跳出循环后使用left的值来做判断， 即 return nums[left] != target。同样的道理，如果设计mid的值的bias是往右，则target是大于数组中最大值的时候，left也会越界，这是就适合用right来做判断了。
-为了简化起见，如果是查找值，就用while (left <=right),这样出来就返回false就完了（因为在循环内如果有相等就已经直接返回为true了）。而如果查找索引，就使用while (left<right)，这样出来就直接返回Left了。
+如果是查找值，用同样的框架比如while (left < right)，但是里面就不应该是right = mid了，而是right = mid - 1。因为查到值就直接返回了，要没有的话就在左边或右边的范围内再查找，但是mid位置上的值是没什么用了。但是查找索引不一样，比如mid位置上的值不是target的值，但是有可能会插入在这个位置，所以这个位置是需要找的索引，所以是right = mid。
+因为mid是bias左边的值的，所以在跳出循环后right的值有可能越界。因为如果target比数组里最小的元素都要小，那么当left和right相邻是，mid的值是数组的第一个元素，target仍然小于它，则right = mid - 1，这样right就越界了，但是Left是不会越界的。所以最安全的方式，用这种框架时，跳出循环后使用left的值来做判断， 即 return nums[left] != target。同样的道理，如果设计mid的值的bias是往右，则target是大于数组中最大值的时候，left也会越界，这是就适合用right来做判断了。
+为了简化起见，如果是查找值，就用while (left <=right),这样出来就返回false就完了（因为在循环内如果有相等就已经直接返回为true了），而如果还是用while(left < right)这个框架，则需要判断nums[left]是否等于target，如果等于，则返回true，否则false。而如果查找索引，就使用while (left<right)，这样出来就直接返回Left了。
 34. Find First and Last Position of Element in Sorted Array
 做两次binary search，一次找到最左边，一次找到最右边。
+在搜索最左边的时候，当发现相等的情况时，需要并入到target < nums[mid]的分支里，因为我们需要尽量搜索最左边的范围。因为可能除了此时的mid，我们再也找不到与target相等的值了，所以在更新索引时需要right = mid。这样如果当前位置的mid的值等于target，它会进入到上述分支，right = mid，比如在往左找是，得到的mid的值比target更小，这是会进入另一个分支，更新left= mid+1，这样无论如何，当停止循环即left = right时，都会有left的值指向target最左边的值（如果target的值在数组中存在的话）。而对于搜索最右边的边界时，其最后跳出的位置(left == right)， 如果target正好在数组的最后一个位置，那么left就是它本身，否则就是在最后一个target值的稍后一个位置。
+简写做法是，查找右边bound的时候其实就是找插入位置那道题（35），即找到比target大的第一个元素的位置，然后这个位置的前面一个位置就是target的右边bound。
+
+对于二份搜索的题目，一定要注意每种不同situation的corner case,这导致了其在同一个框架下细节的差别。
+sqrt
 
 
 
