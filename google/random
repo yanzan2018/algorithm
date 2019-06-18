@@ -1,0 +1,2 @@
+478. Generate Random Point in a Circle
+tricky 的地方在于要用要构造一个正方形来采样，然后抛弃没有落在圆中的点。可以试想通过一个helper函数来实现这个功能，在Helper函数内部
