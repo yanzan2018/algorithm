@@ -1,3 +1,4 @@
+### https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs
 ### Topological Sorting for a graph is not possible if the graph is not a DAG.It is a linear ordering of vertices for DAG.
 There can be more than one topological sorting for a graph. 
 ### The first vertex in topological sorting is always a vertex with in-degree as 0 (a vertex with no in-coming edges).
