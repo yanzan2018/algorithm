@@ -1,7 +1,15 @@
-630. Course Schedule III 这道题与常见的meeting room不一样的是，会议的开始和结束时间都是固定的，而这里课程的开始时间是浮动的。
+### 630. Course Schedule III 
+这道题与常见的meeting room不一样的是，会议的开始和结束时间都是固定的，而这里课程的开始时间是浮动的。
 从两门课程开始分析，发现先挑结束时间早的课程
 比如a = [100, 200]
-b = [200, 1300]]
-先学习a，然后再学习b，可以在两门课的dealine之前学完两门课程；如果先学b，再学a，就只能学习b这一门课程
-扩展到多门课程
+b = [200, 1300]
+先学习a，然后再学习b，可以在两门课的dealine之前学完两门课程；如果先学b，再学a，就只能学习b这一门课程。
+所以先学习deadline靠前的课程是最有利的。
+https://leetcode.com/problems/course-schedule-iii/solution/   参考各种case的分析，得出结论就是it is always profitable to take the course with a smaller end day prior to a course with a larger end day.
+
+
 https://medium.com/@ChYuan/leetcode-no-630-course-schedule-iii-%E5%BF%83%E5%BE%97-hard-ab374aafc201
+
+
+### 1094. Car Pooling
+ 
