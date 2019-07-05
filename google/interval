@@ -13,4 +13,7 @@ https://medium.com/@ChYuan/leetcode-no-630-course-schedule-iii-%E5%BF%83%E5%BE%9
 ### 1094. Car Pooling
 https://leetcode.com/problems/car-pooling/discuss/317611/C%2B%2BJava-O(n)-Thousand-and-One-Stops  这个方法非常smart，但是比如trips只有一个三元组，而且end_location非常的大，则这种方法则非常浪费空间。
 用优先队列是一种更general的方法,空间复杂度最多是trips数组的大小。
+思考这个问题的时候，显然需要先对trips按照开始站点排序，而且要在遍历的过程中把之前的结束站点和载的人数都记录下来。这个不可能只比较相邻的两个trip,因为有可能有多个trip的结束站点相同，或者晚开始的trip但是先到达终点，
+这样只比较相邻的会丢失很多信息。所以用一个pq来记录每次trip的终点和人数,这样可以用来管理遍历过的站点,并且可以按照终点顺序排序。
+
  
