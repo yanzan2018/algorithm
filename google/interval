@@ -10,6 +10,7 @@ https://leetcode.com/problems/course-schedule-iii/solution/   参考各种case�
 
 https://medium.com/@ChYuan/leetcode-no-630-course-schedule-iii-%E5%BF%83%E5%BE%97-hard-ab374aafc201
 
-
 ### 1094. Car Pooling
+https://leetcode.com/problems/car-pooling/discuss/317611/C%2B%2BJava-O(n)-Thousand-and-One-Stops  这个方法非常smart，但是比如trips只有一个三元组，而且end_location非常的大，则这种方法则非常浪费空间。
+用优先队列是一种更general的方法,空间复杂度最多是trips数组的大小。
  
