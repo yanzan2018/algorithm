@@ -16,4 +16,7 @@ https://leetcode.com/problems/car-pooling/discuss/317611/C%2B%2BJava-O(n)-Thousa
 思考这个问题的时候，显然需要先对trips按照开始站点排序，而且要在遍历的过程中把之前的结束站点和载的人数都记录下来。这个不可能只比较相邻的两个trip,因为有可能有多个trip的结束站点相同，或者晚开始的trip但是先到达终点，
 这样只比较相邻的会丢失很多信息。所以用一个pq来记录每次trip的终点和人数,这样可以用来管理遍历过的站点,并且可以按照终点顺序排序。
 
+252. Meeting Rooms    
+253. Meeting Rooms II   类似car pooling，用一个pq来存储所有已召开会议的结束时间，这样来一个新会议时，就可以比较其开始时间和之前会议结束时间的关系。
+
  
