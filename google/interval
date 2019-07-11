@@ -29,3 +29,5 @@ https://leetcode.com/problems/car-pooling/discuss/317611/C%2B%2BJava-O(n)-Thousa
  505. The Maze II 
  这道题不用visited，因为要遍历所有可能的路径来找到最小的步数，
  499. The Maze III 
+ https://blog.csdn.net/magicbean2/article/details/78727575 
+ http://hehejun.blogspot.com/2017/08/leetcodethe-maze-iii.html
