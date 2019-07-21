@@ -17,12 +17,18 @@ turnRight(int k)是用来robot转身k次。比如，turnRight(2)就可以让机�
 如果机器人转了360度都走不了，它就应该回退了（即先转360度，然后再转180度；因为转360度是回到了原地，所以可以直接转180度就可以了）。
 其实就是搜索，回溯法搜索房间的每一个点(在这里回溯就是转180度，注意还要move)，这里要用dfs，因为机器人不能同时出现在两个地方，所以用不了bfs。
 根据AI的思想， 首先根据提供的API定义出自己想要的actions（三个方向移动和返回原来的位置），然后利用这些action解决问题
-回溯的时候需要五步，(Turn left两次，move, turn left两次) ，头两次turn left是为了转到之前的方向，然后move，然后再次需要调整方向到之前的方向，然后再开始下一次的dfs的探索。
+回溯的时候需要五步(普通的就一步，即remove)，(Turn left两次，move, turn left两次) ，头两次turn left是为了转到之前的方向，然后move，然后再次需要调整方向到之前的方向，然后再开始下一次的dfs的探索。 
 平时的dfs是因为定义了一个方向数组，所以会一直向某个方向移动，一直到移动不了为止。这里不同的是机器人除了转向，否则会一直往一个方向移动。
 与maze比较像，一直要碰到障碍物或边界才换方向。但maze不需要回溯。
 https://www.1point3acres.com/bbs/thread-289514-8-1.html
 https://www.1point3acres.com/bbs/interview/google-software-engineer-403845.html
 https://www.1point3acres.com/bbs/thread-345555-1-1.html
+https://www.1point3acres.com/bbs/thread-345555-1-1.html
+https://massivealgorithms.blogspot.com/2018/12/leetcode-489-robot-room-cleaner.html
+http://www.noteanddata.com/leetcode-489-Robot-Room-Cleaner-java-solution-note.html
+https://linlaw0229.github.io/2019/03/02/489-Robot-Room-Cleaner/
+https://www.cnblogs.com/grandyang/p/9988250.html
+https://blog.csdn.net/sc19951007/article/details/83743171
 
 
 353. Design Snake Game
