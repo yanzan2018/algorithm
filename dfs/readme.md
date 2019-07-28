@@ -34,4 +34,13 @@ https://blog.csdn.net/sc19951007/article/details/83743171
 353. Design Snake Game
 
 
+323. Number of Connected Components in an Undirected Graph
+先建好图，就非常好做。https://leetcode.com/submissions/detail/246854787/  其中的visited因为输入给定了图中结点的个数，所以可以用数组，但是也可以用hashset。用hashset的好处是如果没有给定图中结点的个数，就不能用数组，但是hashset是始终可以用的。
+当然也可以不用建图来做，但是没有建图后好写。https://leetcode.com/submissions/detail/246835263/。 而且每dfs遍历一个节点，都会走一遍所有的边比如m,这样时间复杂度为O(mn)，但是建好图后的时间复杂度就是o(n)
+
+dfs 对于无向图才需要考虑visited，比如number of islands里有四个方向的这种；而对于有向图，除非有环，否则不用考虑。
+
+
+
+
 
