@@ -40,6 +40,9 @@ https://blog.csdn.net/sc19951007/article/details/83743171
 
 dfs 对于无向图才需要考虑visited，比如number of islands里有四个方向的这种；而对于有向图，除非有环，否则不用考虑。
 
+684. Redundant Connection 
+261. Graph Valid Tree 
+
 
 
 
