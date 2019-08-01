@@ -41,9 +41,15 @@ https://blog.csdn.net/sc19951007/article/details/83743171
 dfs 对于无向图才需要考虑visited，比如number of islands里有四个方向的这种；而对于有向图，除非有环，否则不用考虑。
 
 684. Redundant Connection 
+这道题在Notes中提到N is the size of the input array.说明图是n个节点，N条边。
+https://leetcode.com/problems/redundant-connection/discuss/163973/dfs-and-union-find 
+
+这道题的dfs与一般图的dfs不一样，因为一般图的dfs是按照点来遍历，而这道题是按照边来遍历，即遍历每一条边，check这条边关联的两个点是否已经有路径可达，如果没有，则加入这条边，否则就说明加入这条边后会出现一个环，则返回这条边。
+注意这道题的dfs中的visited每次都是重置了的，因为每次新来一条边时按照dfs的思想，会check这条边所有相关联的邻近点的关联的边。如果visited不重置，那么第一条边被check完了，第二条边加入的时候，第一条边关联的点就没法check了。
+这道题目的dfs是bottom up的，即每次都要返回一个值。时间复杂度是n的平方阶。
+
 261. Graph Valid Tree 
 
-https://leetcode.com/problems/redundant-connection/discuss/163973/dfs-and-union-find
 
 
 
