@@ -43,6 +43,8 @@ dfs 对于无向图才需要考虑visited，比如number of islands里有四个�
 684. Redundant Connection 
 261. Graph Valid Tree 
 
+https://leetcode.com/problems/redundant-connection/discuss/163973/dfs-and-union-find
+
 
 
 
