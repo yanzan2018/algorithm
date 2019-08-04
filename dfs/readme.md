@@ -30,6 +30,8 @@ https://linlaw0229.github.io/2019/03/02/489-Robot-Room-Cleaner/
 https://www.cnblogs.com/grandyang/p/9988250.html
 https://blog.csdn.net/sc19951007/article/details/83743171
 
+https://www.youtube.com/watch?v=YKE4Vd1ysPI 并查集
+
 
 353. Design Snake Game
 
