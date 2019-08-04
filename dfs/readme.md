@@ -33,6 +33,8 @@ https://blog.csdn.net/sc19951007/article/details/83743171
 https://www.youtube.com/watch?v=YKE4Vd1ysPI 并查集
 
 
+
+
 353. Design Snake Game
 
 
@@ -43,7 +45,9 @@ https://www.youtube.com/watch?v=YKE4Vd1ysPI 并查集
 dfs 对于无向图才需要考虑visited，比如number of islands里有四个方向的这种；而对于有向图，除非有环，否则不用考虑。
 
 684. Redundant Connection 
-这道题在Notes中提到N is the size of the input array.说明图是n个节点，N条边。
+这道题在Notes中提到N is the size of the input array.说明图是n个节点，N条边。此外， If there are multiple answers, return the answer that occurs last in the given 2D-array.这个指明并不是返回cycle里的任意一条边，而是加入这条边就会形成cycle的那条边。
+这道题也需要先建好图,然后再在上边做操作。对于number of islands的这样的题目，因为已经把图建立好了， 所以不用专门做建图的操作（建好意味着很容易在上边做一些图的遍历等操作）。
+
 https://leetcode.com/problems/redundant-connection/discuss/163973/dfs-and-union-find 
 
 这道题的dfs与一般图的dfs不一样，因为一般图的dfs是按照点来遍历，而这道题是按照边来遍历，即遍历每一条边，check这条边关联的两个点是否已经有路径可达，如果没有，则加入这条边，否则就说明加入这条边后会出现一个环，则返回这条边。
