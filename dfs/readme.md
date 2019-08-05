@@ -58,6 +58,12 @@ https://leetcode.com/problems/redundant-connection/discuss/163973/dfs-and-union-
 
 261. Graph Valid Tree 
 
+46. Permutations 
+walk through 这类case的时候，注意按照深度优先遍历的思路去走，而不要去看循环for (int i = 0; i < nums.length; i++)这样去思考。
+https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning) 
+
+
+
 
 
 
