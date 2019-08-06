@@ -61,6 +61,8 @@ https://leetcode.com/problems/redundant-connection/discuss/163973/dfs-and-union-
 46. Permutations 
 walk through 这类case的时候，注意按照深度优先遍历的思路去走，而不要去看循环for (int i = 0; i < nums.length; i++)这样去思考。
 https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning) 
+46 与17(Letter Combinations of a Phone Number)非常像 不同之处在于17不需要backtrack，因为用的是String
+
 
 
 
