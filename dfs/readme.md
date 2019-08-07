@@ -63,6 +63,17 @@ walk through 这类case的时候，注意按照深度优先遍历的思路去走
 https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning) 
 46 与17(Letter Combinations of a Phone Number)非常像 只是17每个位置上的多种option是通过Mapping找到的，是变化的，而不是像46一样是固定的。
 不同之处在于17不需要backtrack，因为用的是String
+https://leetcode.com/submissions/detail/249339620/   这种写法由于curString += c; 在当前递归函数里把curString做了变化，所以需要在最后写上 curString = curString.substring(0, curString.length()-1); 这就是回溯。
+更好的写法是不要在当前层改变curString，而是在递归调用里改变，dfs(digits, curString + c, res, mapping);这样就不用上面的回溯了。提交如下
+https://leetcode.com/submissions/detail/249603578/
+注意：mapping可以使用数组，String[] mapping = new String[]{"", "", "abc", "def", "ghi", "jkl",  "mno", "pqrs", "tuv",  "wxyz" };
+这样避免list add多行。
+char d = digits.charAt(curString.length());  的写法太tricky,更通用的写法是加一个pos参数在递归函数里，这样来取得每次是做哪个数字。如下
+https://leetcode.com/submissions/detail/249607442/
+
+
+
+
 
 
 
