@@ -70,6 +70,10 @@ https://leetcode.com/submissions/detail/249603578/
 这样避免list add多行。
 char d = digits.charAt(curString.length());  的写法太tricky,更通用的写法是加一个pos参数在递归函数里，这样来取得每次是做哪个数字。如下
 https://leetcode.com/submissions/detail/249607442/
+以上是top down的做法，还可以用bottom up的做法
+bottom up 的递归函数设计需要有一个返回值，递归函数的base case是要到最下面一层才开始有值返回。
+https://leetcode.com/submissions/detail/250161830/   bottom up的写法
+
 
 
 
