@@ -74,6 +74,11 @@ https://leetcode.com/submissions/detail/249607442/
 bottom up 的递归函数设计需要有一个返回值，递归函数的base case是要到最下面一层才开始有值返回。
 https://leetcode.com/submissions/detail/250161830/   bottom up的写法
 还有bfs的写法
+https://leetcode.com/submissions/detail/250855068/ 
+注意每次生成的字符串需要放在一个cur里面，然后再复制到res里。
+对于这种题目的时间复杂度分析，不应该看代码，而应该分析解的构建过程。由于每个数字对应三种或四种可能性的字母，所以如果数字长度为n,则时间复杂度为四的n次方，一般就说成是2的n次方，相当于是指数级别。
+
+
 
 
 
