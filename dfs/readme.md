@@ -78,8 +78,10 @@ https://leetcode.com/submissions/detail/250855068/
 注意每次生成的字符串需要放在一个cur里面，然后再复制到res里。
 对于这种题目的时间复杂度分析，不应该看代码，而应该分析解的构建过程。由于每个数字对应三种或四种可能性的字母，所以如果数字长度为n,则时间复杂度为四的n次方，一般就说成是2的n次方，相当于是指数级别。
 注意LinkedList与ArrayList之间的差别，当代码中有get时候，应当用ArrayList.
+在对ArrayList/LinkedList做遍历时，用foreach的方式比for循环好。因为foreach无论对哪种List都是O(n)，然后在循环内部再get其中某个元素时，都是O（1）；如果用普通的for i 循环这种，对于for循环里面而言，都是O（n），但是对于在for循环里面使用某个item对于ArrayList是O（1），但是LinkedList是O（n），所以anyway都是用foreach更好一些。
 注意for i 和foreach的区别。
 https://medium.com/algorithms-and-leetcode/backtracking-e001561b9f28 
+
 
 
 
