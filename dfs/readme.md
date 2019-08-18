@@ -81,6 +81,9 @@ https://leetcode.com/submissions/detail/250855068/
 在对ArrayList/LinkedList做遍历时，用foreach的方式比for循环好。因为foreach无论对哪种List都是O(n)，然后在循环内部再get其中某个元素时，都是O（1）；如果用普通的for i 循环这种，对于for循环里面而言，都是O（n），但是对于在for循环里面使用某个item对于ArrayList是O（1），但是LinkedList是O（n），所以anyway都是用foreach更好一些。
 注意for i 和foreach的区别。
 https://medium.com/algorithms-and-leetcode/backtracking-e001561b9f28 
+Permutation  
+Permutation 2  https://leetcode.com/submissions/detail/159813802/ 
+注意这个条件： if (i > 0 && nums[i] == nums[i-1] && !used[i-1]) 
 
 
 
