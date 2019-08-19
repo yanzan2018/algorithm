@@ -84,6 +84,18 @@ https://medium.com/algorithms-and-leetcode/backtracking-e001561b9f28
 Permutation  
 Permutation 2  https://leetcode.com/submissions/detail/159813802/ 
 注意这个条件： if (i > 0 && nums[i] == nums[i-1] && !used[i-1]) 
+LinkedList<>()与LinkedList()的区别在于有<>可以在编译时就发现类型错误，但是没有的话，会在runtime时才会发生runtime错误
+List<String> input_list = new LinkedList<String>();
+		input_list.add("abc");
+		List<Integer> test_list = new LinkedList<>(input_list);   //编译就会出错
+  List<Integer> test_list = new LinkedList(input_list);    //编译不会出错，
+  但是在使用时，比如执行以下code时会出错
+  System.out.println(test_list.size());
+		for (Integer elem: test_list) {
+			System.out.println("test list"+elem);
+		}
+  
+  
 
 
 
