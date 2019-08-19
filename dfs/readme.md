@@ -94,6 +94,9 @@ List<String> input_list = new LinkedList<String>();
 		for (Integer elem: test_list) {
 			System.out.println("test list"+elem);
 		}
+	
+对于subset，画出implicit graph 后，可以看到所有node都是一个解。所以在写dfs的时候，会把所有的curList放到res中。在构建每个解的时候，注意start参数的使用。
+
   
   
 
