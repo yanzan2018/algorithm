@@ -97,9 +97,9 @@ List<String> input_list = new LinkedList<String>();
 	
 对于subset，画出implicit graph 后，可以看到所有node都是一个解。所以在写dfs的时候，会把所有的curList放到res中。在构建每个解的时候，注意start参数的使用。
 
-https://leetcode.com/submissions/detail/253516601/ subset2 注意和permutation2的写法区别和为什么
+https://leetcode.com/submissions/detail/253516601/ subset2 注意和permutation2的写法区别 因为permutation的for 循环每次是从头开始的，而subset不会使用之前用过的元素
 
-combination sum2 注意和permutation2的写法区别和为什么
+combination sum2 注意和permutation2的写法区别 因为permutation的for 循环每次是从头开始的，而combination sum2不会使用之前用过的元素
 
 
 
