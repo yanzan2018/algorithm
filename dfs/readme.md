@@ -101,6 +101,8 @@ https://leetcode.com/submissions/detail/253516601/ subset2 注意和permutation2
 
 combination sum2 注意和permutation2的写法区别 因为permutation的for 循环每次是从头开始的，而combination sum2不会使用之前用过的元素
 
+注意combination sum2 和combination sum3的写法， 有剪枝的那种（）。
+
 
 
   
