@@ -1,6 +1,6 @@
 bottom up 其实是后序遍历
-* 98. Validate Binary Search Tree
-* 104. Maximum Depth of Binary Tree
+* 98 Validate Binary Search Tree
+* 104  Maximum Depth of Binary Tree
 - 110. Balanced Binary Tree
 - 112. Path Sum
 - 124. Binary Tree Maximum Path Sum
