@@ -20,7 +20,19 @@ long[] prev = new long[1]; 是一个dummy node，在递归过程中不断改变�
 注意不能写成TreeNode[] prev = new TreeNode(1), 因为TreeNode的value是整形，这样如果输入是最小整数比如[-2147483648]，就会出错。
 
 
-
+bottum up 的写法
+注意因为test case中可能有Integer的最小值，所以https://leetcode.com/submissions/detail/257251012/ 做法是不对的，因为当只有一个结点且这个结点的值是最小值时，如下
+Input:
+[-2147483648]
+Output:
+false
+Expected:
+true
+所以错了。
+https://leetcode.com/submissions/detail/257254734/   这种写法用Long数组，
+ https://leetcode.com/submissions/detail/257257431/   更好的写法是是用Integer[] 数组，这样最开始的时候prev[0]的值是null。
+ 注意，prev[0]的指向始终不变，变化的是里面的值。和permutation里的curList一样的，变化的是里面的值。
+ 
 
 - 104  Maximum Depth of Binary Tree
 - 110  Balanced Binary Tree
