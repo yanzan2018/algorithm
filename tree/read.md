@@ -9,6 +9,8 @@ recursive和iterative都需要会
 bottom up 其实是后序遍历
 - 98 Validate Binary Search Tree
 有top down,bottom up和iterative的写法
+
+
 bottom up做这道题目最为普遍，但是也需要也知道top down的写法
 https://leetcode.com/submissions/detail/256635492/ top down 的写法
 top down的写法是没有返回值的，一般都需要设全局变量。
@@ -16,6 +18,9 @@ top down的写法是没有返回值的，一般都需要设全局变量。
 https://leetcode.com/submissions/detail/256679620/  
 long[] prev = new long[1]; 是一个dummy node，在递归过程中不断改变的是它的值。
 注意不能写成TreeNode[] prev = new TreeNode(1), 因为TreeNode的value是整形，这样如果输入是最小整数比如[-2147483648]，就会出错。
+
+
+
 
 - 104  Maximum Depth of Binary Tree
 - 110  Balanced Binary Tree
