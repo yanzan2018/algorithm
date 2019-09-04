@@ -6,7 +6,8 @@ recursive和iterative都需要会
 
 这里的recursive是top down的，可以把res设为全局变量，也可以作为helper函数的参数传进去。注意与permutation里res的新元素加入的位置的不同；permutation中的res是逐层加入每个元素的，所以放在递归的开始；而这个树的中序遍历是需要在把左边子树都一直递归到最左边，才开始在res加入元素，注意写法的不同。
 而且需要注意把左边递归完了，返回来后，还需要继续执行后面的语句。
-bottom up 其实是后序遍历
+bottom up 大多数是后序遍历，因为先得知道左边子树的值，和右子树的值，才能决定当前节点的值。 
+但是98题是中序遍历也可以用bottom up。是因为这道题左边的值不满足，就可以返回了；或当前的节点不满足，也可以返回。
 - 98 Validate Binary Search Tree
 有top down,bottom up和iterative的写法
 
@@ -29,9 +30,16 @@ false
 Expected:
 true
 所以错了。
-https://leetcode.com/submissions/detail/257254734/   这种写法用Long数组，
+https://leetcode.com/submissions/detail/257254734/   这种写法用Long数组，注意初始化是Long的最小值，这样在刚开始时，不管根节点是什么值，prev肯定都会被替换掉。
+
+
  https://leetcode.com/submissions/detail/257257431/   更好的写法是是用Integer[] 数组，这样最开始的时候prev[0]的值是null。
- 注意，prev[0]的指向始终不变，变化的是里面的值。和permutation里的curList一样的，变化的是里面的值。
+ 注意，prev[0]的指向始终不变，变化的是里面的值。和permutation里的curList一样的，变化的是里面的值。prev的初始值其实并不重要，因为它立即会被更新为当前root的val，这里用Null的目的就是标识它不是prev的初始值，用任何一个值能达到目的都行。
+ 
+ 
+ https://leetcode.com/submissions/detail/257244648/ 这种写法的错误，注意出错test case[1,1]，每一层的prev是自己这层递归独有的，不会和其它层共享。
+ 
+ 
  
 
 - 104  Maximum Depth of Binary Tree
