@@ -6,6 +6,7 @@ recursive和iterative都需要会
 
 这里的recursive是top down的，可以把res设为全局变量，也可以作为helper函数的参数传进去。注意与permutation里res的新元素加入的位置的不同；permutation中的res是逐层加入每个元素的，所以放在递归的开始；而这个树的中序遍历是需要在把左边子树都一直递归到最左边，才开始在res加入元素，注意写法的不同。
 而且需要注意把左边递归完了，返回来后，还需要继续执行后面的语句。
+top down可以说是先序，当前处理的节点，然后它的左边，右边都还不知道结果。top down一般需要传一个上面的值下来(这个参数是记录上面的遍历得到的值)，而bottom up需要返回一个值上去。 
 bottom up 大多数是后序遍历，因为先得知道左边子树的值，和右子树的值，才能决定当前节点的值。 
 但是98题是中序遍历也可以用bottom up。是因为这道题左边的值不满足，就可以返回了；或当前的节点不满足，也可以返回。
 - 98 Validate Binary Search Tree
@@ -19,6 +20,8 @@ top down的写法是没有返回值的，一般都需要设全局变量。
 https://leetcode.com/submissions/detail/256679620/  
 long[] prev = new long[1]; 是一个dummy node，在递归过程中不断改变的是它的值。
 注意不能写成TreeNode[] prev = new TreeNode(1), 因为TreeNode的value是整形，这样如果输入是最小整数比如[-2147483648]，就会出错。
+
+98的top down不能算完全的top down，只能说是中序。与其bottom up版本相比，当左边遇到false没有终止，还继续往下执行。这个要终止也是可以的，一进来就判断res是不是false，就return,但是本质上还是top down。
 
 
 bottum up 的写法
