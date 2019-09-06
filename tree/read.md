@@ -42,7 +42,7 @@ https://leetcode.com/submissions/detail/257254734/   这种写法用Long数组�
  
  https://leetcode.com/submissions/detail/257244648/ 这种写法的错误，注意出错test case[1,1]，每一层的prev是自己这层递归独有的，不会和其它层共享。
  
- 
+ 和98类似的题目有   230. Kth Smallest Element in a BST
  
 
 - 104  Maximum Depth of Binary Tree
