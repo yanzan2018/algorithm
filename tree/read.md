@@ -43,6 +43,18 @@ https://leetcode.com/submissions/detail/257254734/   这种写法用Long数组�
  https://leetcode.com/submissions/detail/257244648/ 这种写法的错误，注意出错test case[1,1]，每一层的prev是自己这层递归独有的，不会和其它层共享。
  
  和98类似的题目有   230. Kth Smallest Element in a BST
+ 用栈的迭代方法很简单， 如下
+ https://leetcode.com/submissions/detail/258661752/      第26行的返回值相当于dummy node，返回的具体值不重要，只是一个必须要的return语句，因为按照题目You may assume k is always valid, 1 ≤ k ≤ BST's total elements.  所以当执行时一定会在第19行返回。
+ https://leetcode.com/submissions/detail/258662387/     这种写法用了break，但是一般来说，能够直接return的就最好return，而不要用break；因为break只是跳出循环，但是后面可能还有语句需要执行。所以还是上面的写法更好。
+ 这类有count的题目用递归做时，特别要注意这个count值并不是每一层递归就变化（如permutation类型的题目很多就是每层变量会变化），而是有可能有几层或者说要满足条件后count值才会发生变化，这时count最好使用全局变量，当然也可以用参数的方式，但是必须用引用，比如数组。
+ top down 的递归写法
+ https://leetcode.com/submissions/detail/259100364/   和 https://leetcode.com/submissions/detail/259103342/   有剪枝, 时间效率更高。
+ bottum up的递归写法
+ https://leetcode.com/submissions/detail/259114418/  这里使用了count做全局变量。
+ 
+ 
+ bottom up的递归写法 
+ 
  
 
 - 104  Maximum Depth of Binary Tree
@@ -52,8 +64,8 @@ https://leetcode.com/submissions/detail/257254734/   这种写法用Long数组�
 - 235 Lowest Common Ancestor of a Binary Search Tree
 - 236 Lowest Common Ancestor of a Binary Tree
 - 297 Serialize and Deserialize Binary Tree
-- 337 House Robber III
 - 449 Serialize and Deserialize BST
+- 337 House Robber III
 - 437 Path Sum III
 
 
