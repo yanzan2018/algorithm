@@ -63,10 +63,11 @@ https://leetcode.com/submissions/detail/257254734/   这种写法用Long数组�
  https://leetcode.com/submissions/detail/260874738/  bottum up的写法
  这里有两个base case。bottum up的写法经常会根据情况写好几个base case；这里bottum up的写法也没有剪枝的必要。
  
- 
- 
-
 - 104  Maximum Depth of Binary Tree
+
+bottom up 的写法：
+top down的写法：
+
 - 110  Balanced Binary Tree
 - 112  Path Sum
 - 124 Binary Tree Maximum Path Sum
