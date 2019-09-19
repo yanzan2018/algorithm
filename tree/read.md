@@ -62,6 +62,7 @@ https://leetcode.com/submissions/detail/257254734/   这种写法用Long数组�
  这道题的关键在于按照这棵树的定义， 即根节点是整颗树里的最小值，而其他节点的值要么等于该根节点，要么大于根节点， 所以top down中对于根节点的处理，就是如果大于根节点的才处理。注意学会剪枝，第30行的return。如test case[2,2,5,3,2,null,null,null,null,2,7]。 当递归到根节点为3就可以return了，因为再往下都是比3小的；同理对根节点5和7。这里比较特殊的是，3,5,7这些根节点都没有子树了，但是要明白有子树的话也不需要往下走了，因为当前节点就是包括子树里的最小值。
  https://leetcode.com/submissions/detail/260874738/  bottum up的写法
  这里有两个base case。bottum up的写法经常会根据情况写好几个base case；这里bottum up的写法也没有剪枝的必要。
+ https://leetcode.com/submissions/detail/262216339/  迭代的写法
  
 - 104  Maximum Depth of Binary Tree
 
