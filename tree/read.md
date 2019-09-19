@@ -68,6 +68,13 @@ https://leetcode.com/submissions/detail/257254734/   这种写法用Long数组�
 
 bottom up 的写法：
 top down的写法：
+迭代的写法
+
+559. Maximum Depth of N-ary Tree 
+
+111. Minimum Depth of Binary Tree 
+
+
 
 - 110  Balanced Binary Tree
 - 112  Path Sum
