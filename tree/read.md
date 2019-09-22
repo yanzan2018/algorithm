@@ -71,6 +71,8 @@ top down的写法：
 迭代的写法
 
 559. Maximum Depth of N-ary Tree 
+https://leetcode.com/submissions/detail/262537740/  top down 的写法
+https://leetcode.com/submissions/detail/263004587/   bottum up 的写法。注意max变量不是全局的，而是用作当前层的。另外max的变量的初始值应该赋值多少，可以走下case就知道了，不要想当然地就认为是0。
 
 111. Minimum Depth of Binary Tree 
 
