@@ -60,9 +60,11 @@ https://leetcode.com/submissions/detail/257254734/   这种写法用Long数组�
  https://www.youtube.com/watch?v=QXvbRrK1zjY&t=596s 花花酱 
  https://leetcode.com/submissions/detail/260845444/   top down的做法
  这道题的关键在于按照这棵树的定义， 即根节点是整颗树里的最小值，而其他节点的值要么等于该根节点，要么大于根节点， 所以top down中对于根节点的处理，就是如果大于根节点的才处理。注意学会剪枝，第30行的return。如test case[2,2,5,3,2,null,null,null,null,2,7]。 当递归到根节点为3就可以return了，因为再往下都是比3小的；同理对根节点5和7。这里比较特殊的是，3,5,7这些根节点都没有子树了，但是要明白有子树的话也不需要往下走了，因为当前节点就是包括子树里的最小值。
+ 这道题目的关键在于left 和right 其中一个点是null 的这种情况
  https://leetcode.com/submissions/detail/260874738/  bottum up的写法
  这里有两个base case。bottum up的写法经常会根据情况写好几个base case；这里bottum up的写法也没有剪枝的必要。
  https://leetcode.com/submissions/detail/262216339/  迭代的写法
+ 
  
 - 104  Maximum Depth of Binary Tree
 
@@ -75,6 +77,15 @@ https://leetcode.com/submissions/detail/262537740/  top down 的写法
 https://leetcode.com/submissions/detail/263004587/   bottum up 的写法。注意max变量不是全局的，而是用作当前层的。另外max的变量的初始值应该赋值多少，可以走下case就知道了，不要想当然地就认为是0。
 
 111. Minimum Depth of Binary Tree 
+
+https://leetcode.com/submissions/detail/263022526/   top down 
+
+https://leetcode.com/submissions/detail/263341132/   bottum up  最简洁的写法
+https://leetcode.com/submissions/detail/263339483/   写成这样就可以了
+https://leetcode.com/problems/minimum-depth-of-binary-tree/submissions/  迭代的写法
+
+
+
 
 
 
