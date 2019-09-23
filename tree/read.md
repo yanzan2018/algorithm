@@ -83,6 +83,7 @@ https://leetcode.com/submissions/detail/263022526/   top down
 https://leetcode.com/submissions/detail/263341132/   bottum up  最简洁的写法
 https://leetcode.com/submissions/detail/263339483/   写成这样就可以了
 https://leetcode.com/problems/minimum-depth-of-binary-tree/submissions/  迭代的写法
+时间复杂度和空间复杂度每种算法都是O（n）
 
 
 
