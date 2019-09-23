@@ -83,7 +83,9 @@ https://leetcode.com/submissions/detail/263022526/   top down
 https://leetcode.com/submissions/detail/263341132/   bottum up  最简洁的写法
 https://leetcode.com/submissions/detail/263339483/   写成这样就可以了
 https://leetcode.com/problems/minimum-depth-of-binary-tree/submissions/  迭代的写法
-时间复杂度和空间复杂度每种算法都是O（n）
+这三种写法的时间复杂度和空间复杂度每种算法都是O（n）
+其中迭代写法的空间时间复杂度需要思考满二叉树的情况，最后一层最多有多少个节点。这就是空间复杂度最worse的情况，因为迭代写法的辅助空间结构是队列，考虑什么时候是最多。
+
 
 
 
