@@ -87,11 +87,6 @@ https://leetcode.com/problems/minimum-depth-of-binary-tree/submissions/  迭代�
 其中迭代写法的空间时间复杂度需要思考满二叉树的情况，最后一层最多有多少个节点。这就是空间复杂度最worse的情况，因为迭代写法的辅助空间结构是队列，考虑什么时候是最多。
 
 
-
-
-
-
-
 - 110  Balanced Binary Tree
 - 112  Path Sum
 - 124 Binary Tree Maximum Path Sum
