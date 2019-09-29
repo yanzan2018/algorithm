@@ -91,8 +91,26 @@ https://leetcode.com/problems/minimum-depth-of-binary-tree/submissions/  迭代�
 - 112  Path Sum
 - 124 Binary Tree Maximum Path Sum
 - 235 Lowest Common Ancestor of a Binary Search Tree
+top down 的写法
+https://leetcode.com/submissions/detail/264912253/
+https://leetcode.com/submissions/detail/202870534/  这种写法更tricky 
+
 783
 - 236 Lowest Common Ancestor of a Binary Tree
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/  迭代写法
+最直接的思路就是找到两个节点，在找的过程中记录路径。然后比较两个路径来得到Lca。  找路径这个得用递归写。遍历一遍就可以找到p和q的路径。
+这个递归函数的写法注意，
+//正确写法
+if (root == p) {
+            leftPath.addAll(curPath);   
+        }
+//如下，这个地方不能像permutation那样写成leftPath = new LinkedList<>(curList);  因为这样leftPath的指向就发生变化了，就不是最开始传入的那个leftPath了，所以应该保证leftPath的指向不变，而只是改变里面的内容，所以应该使用addAll函数。而且后面也不应该加return函数，因为return了就不能找q了。
+if (root == p) {
+            leftPath = new LinkedList<>(curList);
+            return;
+        }
+ 这种迭代写法也可以使用栈（因为在对齐两个路径，即使两个路径的长度相等时， 更方便从尾部移除元素，现在用的是LinkedList的removeLast方法），但是用栈的时候注意不同点在于因为栈没有new Stack<>(curList)或allAll的方法，所以得使用两个不同的栈来分别track各自的路径。
+        
 - 297 Serialize and Deserialize Binary Tree
 - 449 Serialize and Deserialize BST
 - 337 House Robber III
