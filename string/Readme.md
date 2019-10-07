@@ -1,6 +1,10 @@
-Reverse String 
+### Reverse String 
 最常见的做法是iterative的，可以用左右指针同时从前后开始扫描，也可以使用一个stringbuilder，从输入string的尾部开始开始扫描，依次将扫描到的元素加入到stringbuilder中，然后再把这个stringbuilder返回为string。
+
+
 最直接的做法是top down的，但是由于substring的原因(这样每一层递归的时间复杂度是O（n）)，空间复杂度是n的平方(reverse调用中的自调用reverse，使得时间复杂度的分析按照递归树来走，因为每一层都用一个节点，所以有n层)。
+
+
 String Reverse(String s) {
   if (s == "" || s.length() == 1) {
     return s;
