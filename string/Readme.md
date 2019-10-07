@@ -17,6 +17,8 @@ String reverse(String s) {
   dfs(s, s.length() - 1, sb);
   return sb.toString();
 }
+
+
 //也是top down的写法，因为每次一进递归，就把当前索引的字符加入到stringbuilder中（注意索引是从尾部开始扫描的），因为stringbuilder的append元素是O（1）的，所以这个空间复杂度是O（n）
 //这种解法其实就是迭代的解法中的第二种
 void dfs(String s, int p, StringBuilder sb) {
@@ -26,6 +28,8 @@ void dfs(String s, int p, StringBuilder sb) {
   sb.append(s.charAt(p));
   dfs(s, p-1, sb);
 }
+
+
 //还有bottom up的写法
 String reverse(String s) {
   return dfs(s, 0);
