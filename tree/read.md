@@ -112,8 +112,10 @@ if (root == p) {
  这种迭代写法也可以使用栈（因为在对齐两个路径，即使两个路径的长度相等时， 更方便从尾部移除元素，现在用的是LinkedList的removeLast方法），但是用栈的时候注意不同点在于因为栈没有new Stack<>(curList)或allAll的方法，所以得使用两个不同的栈来分别track各自的路径。
         
 - 297 Serialize and Deserialize Binary Tree
-序列化
+https://www.youtube.com/watch?v=JL4OjKV_pGE&t=56s 
+序列化(比特化数据)就是将变量内容变成一段连续的内存，比如树这种对象，都是指向，没法传输。序列化后才可以把数据存储和发送。
 反序列化就是建树的操作，是个bottom up的过程。建树的过程分为建立结点，和建立结点之间的指向这两个任务。
+dfsTraverseDes的递归函数构建传入的参数注意不要用String，而要用Queue。因为如果用String的话，在递归左子树或右子树的时候，会存在传入其substring的问题，但是不能确定其索引参数；而用Queue的话，递归完左子树，则Queue里的元素会去掉左子树的，所以可以实现相应功能。
 - 449 Serialize and Deserialize BST
 - 337 House Robber III
 - 437 Path Sum III
