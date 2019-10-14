@@ -112,6 +112,8 @@ if (root == p) {
  这种迭代写法也可以使用栈（因为在对齐两个路径，即使两个路径的长度相等时， 更方便从尾部移除元素，现在用的是LinkedList的removeLast方法），但是用栈的时候注意不同点在于因为栈没有new Stack<>(curList)或allAll的方法，所以得使用两个不同的栈来分别track各自的路径。
         
 - 297 Serialize and Deserialize Binary Tree
+序列化
+反序列化就是建树的操作，是个bottom up的过程。建树的过程分为建立结点，和建立结点之间的指向这两个任务。
 - 449 Serialize and Deserialize BST
 - 337 House Robber III
 - 437 Path Sum III
