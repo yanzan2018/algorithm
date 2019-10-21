@@ -113,11 +113,12 @@ if (root == p) {
         
 - 297 Serialize and Deserialize Binary Tree
 https://www.youtube.com/watch?v=JL4OjKV_pGE&t=56s 
-序列化(比特化数据)就是将变量内容变成一段连续的内存，比如树这种对象，都是指向，没法传输。序列化后才可以把数据存储和发送。
+序列化(比特化数据)就是将变量内容变成一段连续的内存，比如树这种对象，都是指向，就是说有很多pointer，没法拷贝给另一个服务器，没法传输。序列化后才可以把数据存储和发送。
 反序列化就是建树的操作，是个bottom up的过程。建树的过程分为建立结点，和建立结点之间的指向这两个任务。在拿到该节点的左右孩子指针后，才能返回该结点，这也是bottum up的style
 dfsTraverseDes的递归函数构建传入的参数注意不要用String，而要用Queue。因为如果用String的话，在递归左子树或右子树的时候，会存在传入其substring的问题，但是不能确定其索引参数；而用Queue的话，递归完左子树，则Queue里的元素会去掉左子树的，所以可以实现相应功能。
-对于题目给的case按照先序序列化应该是 1 2 6 x x x 3 4 x x 5 x x，题目给的序列化是LeetCode的方式。 
+对于题目给的case按照先序序列化应该是 1 2 x x x 3 4 x x 5 x x，题目给的序列化是LeetCode的方式。 
 - 449 Serialize and Deserialize BST
+因为BST的性质，所以按照前序进行序列化的时候，对生成的左右子树不需要对空指针进行存储，这样就生了很多空间；同时在反序列化的时候，直接用数组就可以了。
 - 337 House Robber III
 - 437 Path Sum III
 
