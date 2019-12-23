@@ -7,3 +7,8 @@ https://leetcode.com/problems/word-break/discuss/169383/The-Time-Complexity-of-T
 https://leetcode.com/problems/word-break/discuss/43819/DFS-with-Path-Memorizing-Java-Solution 
 
 ## dp 
+
+
+### 692. Top K Frequent Words
+
+### 973. K Closest Points to Origin
