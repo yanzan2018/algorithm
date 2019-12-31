@@ -6,3 +6,5 @@ https://leetcode.com/problems/merge-intervals/submissions/
 
 560. Subarray Sum Equals K     
 
+https://leetcode.com/submissions/detail/289969750/  brute force 
+
