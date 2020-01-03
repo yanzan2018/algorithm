@@ -15,6 +15,9 @@ LeetCode 523. Continuous Subarray Sum
 
 LeetCode 674. Longest Continuous Increasing Subsequence 
 
+https://leetcode.com/submissions/detail/290732882/  O(n square)
+https://leetcode.com/submissions/detail/290735380/   O(n)
+
 LeetCode 53. Maximum Subarray 
 
 LeetCode 689. Maximum Sum of 3 Non-Overlapping Subarrays 
