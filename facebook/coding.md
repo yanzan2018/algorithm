@@ -22,3 +22,7 @@ LeetCode 53. Maximum Subarray
 
 LeetCode 689. Maximum Sum of 3 Non-Overlapping Subarrays 
 
+LeetCode 480. Sliding Window Median 
+295. Find Median from Data Stream 
+
+LeetCode 670. Maximum Swap 
