@@ -1,8 +1,14 @@
+### priority queue/quick select 
+
 215. Kth Largest Element in an Array 
+
+### interval
 
 56. Merge Intervals 
 
 https://leetcode.com/problems/merge-intervals/submissions/  
+
+### Presum
 
 560. Subarray Sum Equals K     
 
