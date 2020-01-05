@@ -22,6 +22,8 @@ LeetCode 53. Maximum Subarray
 
 LeetCode 689. Maximum Sum of 3 Non-Overlapping Subarrays 
 
+3. Longest Substring Without Repeating Characters
+
 LeetCode 480. Sliding Window Median 
 295. Find Median from Data Stream 
 
