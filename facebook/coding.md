@@ -24,6 +24,9 @@ LeetCode 674. Longest Continuous Increasing Subsequence
 https://leetcode.com/submissions/detail/290732882/  O(n square)
 https://leetcode.com/submissions/detail/290735380/   O(n)
 
+121. Best Time to Buy and Sell Stock 
+https://leetcode.com/submissions/detail/292076823/ 
+
 LeetCode 53. Maximum Subarray 
 
 LeetCode 689. Maximum Sum of 3 Non-Overlapping Subarrays 
