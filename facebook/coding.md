@@ -34,3 +34,27 @@ LeetCode 480. Sliding Window Median
 295. Find Median from Data Stream 
 
 LeetCode 670. Maximum Swap 
+
+LeetCode 3. Longest Substring Without Repeating Characters 
+LeetCode 76. Minimum Window Substring 
+
+LeetCode 43. Multiply Strings 
+LeetCode 8. String to Integer (atoi)
+
+LeetCode 49. Group Anagrams 
+
+LeetCode 349. Intersection of Two Arrays 
+
+LeetCode 10. Regular Expression Matching 
+LeetCode 51. N-Queens 
+LeetCode 29. Divide Two Integers 
+LeetCode 34. Find First and Last Position of Element in Sorted Array 
+
+LeetCode 21. Merge Two Sorted Lists 
+LeetCode 23. Merge K Sorted Lists 
+LeetCode 92. Reverse Linked List II 
+LeetCode 143. Reorder List 
+300. Longest Increasing Subsequence 
+LeetCode 20. Valid Parentheses 
+LeetCode 301. Remove Invalid Parentheses 
+LeetCode 97. Interleaving String 
