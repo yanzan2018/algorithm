@@ -27,9 +27,13 @@ https://leetcode.com/submissions/detail/290735380/   O(n)
 121. Best Time to Buy and Sell Stock 
 https://leetcode.com/submissions/detail/292076823/ 
 
+### Dynamic programming
+
 LeetCode 53. Maximum Subarray 
 
 LeetCode 689. Maximum Sum of 3 Non-Overlapping Subarrays 
+
+LeetCode 10. Regular Expression Matching 
 
 3. Longest Substring Without Repeating Characters
 
@@ -48,7 +52,7 @@ LeetCode 49. Group Anagrams
 
 LeetCode 349. Intersection of Two Arrays 
 
-LeetCode 10. Regular Expression Matching 
+
 LeetCode 51. N-Queens 
 LeetCode 29. Divide Two Integers 
 LeetCode 34. Find First and Last Position of Element in Sorted Array 
