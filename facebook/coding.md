@@ -65,3 +65,6 @@ LeetCode 143. Reorder List
 LeetCode 20. Valid Parentheses 
 LeetCode 301. Remove Invalid Parentheses 
 LeetCode 97. Interleaving String 
+
+### string
+953. Verifying an Alien Dictionary
