@@ -33,6 +33,9 @@ LeetCode 53. Maximum Subarray
 
 LeetCode 689. Maximum Sum of 3 Non-Overlapping Subarrays 
 
+LeetCode 97. Interleaving String 
+leetcode 139. Word Break  
+
 LeetCode 10. Regular Expression Matching 
 
 3. Longest Substring Without Repeating Characters
@@ -65,7 +68,7 @@ LeetCode 143. Reorder List
 300. Longest Increasing Subsequence 
 LeetCode 20. Valid Parentheses 
 LeetCode 301. Remove Invalid Parentheses 
-LeetCode 97. Interleaving String 
+
 
 ### string
 953. Verifying an Alien Dictionary
