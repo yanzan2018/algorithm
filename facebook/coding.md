@@ -34,6 +34,13 @@ LeetCode 53. Maximum Subarray
 LeetCode 689. Maximum Sum of 3 Non-Overlapping Subarrays 
 
 LeetCode 97. Interleaving String 
+https://www.cnblogs.com/grandyang/p/4298664.html 
+这道题需要理解dp数组的真实物理意义；dp[i][j]表示目前s1取前i个字符的子串和s2取前j个字符的子串是否是s3中取到前i+j的interleaving string。
+dp[0][j]表示s1为空时，s2取前j个字符，字符串s3取到的前j个字符是interleaving。
+比如dp[0][1]就表示s1取空串，和s2取第一个字符，然后合起来的字符串，是否是s3取第一个字符的interleaving string。
+暴力dfs
+cached dfs
+
 leetcode 139. Word Break  
 
 LeetCode 10. Regular Expression Matching 
