@@ -80,3 +80,9 @@ LeetCode 301. Remove Invalid Parentheses
 ### string
 953. Verifying an Alien Dictionary
 438. Find All Anagrams in a String
+
+31. Next Permutation 
+https://leetcode.com/problems/next-permutation/discuss/13867/C%2B%2B-from-Wikipediahttps://leetcode.com/problems/next-permutation/discuss/13867/C%2B%2B-from-Wikipedia 
+
+1249. Minimum Remove to Make Valid Parentheses 
+
