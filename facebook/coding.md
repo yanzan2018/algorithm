@@ -85,8 +85,10 @@ leetcode 953. Verifying an Alien Dictionary
 https://leetcode.com/problems/next-permutation/discuss/13867/C%2B%2B-from-Wikipediahttps://leetcode.com/problems/next-permutation/discuss/13867/C%2B%2B-from-Wikipedia 
 
 leetcode 1249. Minimum Remove to Make Valid Parentheses 
-比较容易想到的是栈的方法，
+比较容易想到的是栈的方法， time complexity O(n), space complexity O(n)
 https://leetcode.com/submissions/detail/299460240/ 
+还有 用指针的方法
+https://leetcode.com/submissions/detail/299470450/ 
 
 301. Remove Invalid Parentheses
 
