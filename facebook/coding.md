@@ -81,6 +81,11 @@ LeetCode 301. Remove Invalid Parentheses
 leetcode 953. Verifying an Alien Dictionary
 438. Find All Anagrams in a String
 
+621. Task Scheduler 
+这道题目的idea就是要统计各个任务的个数，要先排个数最多的task，这在cooling interval 的个数小于unique task的个数时有效（比如有AAB,按照ABA，和BAIA,显然是前者），其他情况先放谁都是一样的，因为总是需要idle去填充。其本质就是要尽量减少idle的个数。
+358. Rearrange String k Distance Apart
+767. Reorganize String 
+
 31. Next Permutation 
 https://leetcode.com/problems/next-permutation/discuss/13867/C%2B%2B-from-Wikipediahttps://leetcode.com/problems/next-permutation/discuss/13867/C%2B%2B-from-Wikipedia 
 
