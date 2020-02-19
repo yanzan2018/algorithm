@@ -18,3 +18,11 @@ https://leetcode.com/problems/trapping-rain-water/submissions/
 ### 138. Copy List with Random Pointer
 
 5. Longest Palindromic Substring 
+dp的解法
+https://leetcode.com/submissions/detail/184708441/ 
+求解dp[i][j]需要 知道dp[i+1][j-1]  所以i需要从后往前扫描填充，而j需要从i开始，从前往后扫描填充。
+双指针的解法:
+https://leetcode.com/submissions/detail/184235527/   
+
+
+
