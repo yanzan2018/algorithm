@@ -101,5 +101,13 @@ https://leetcode.com/submissions/detail/299470450/
 
 721. Accounts Merge 
 
+114. Flatten Binary Tree to Linked List 
+https://www.cnblogs.com/nashiyue/p/5313767.html 
+https://www.cnblogs.com/grandyang/p/4293853.html 
+https://blog.csdn.net/gdmmzmj/article/details/64439968 
+https://segmentfault.com/a/1190000010503483 
+https://www.iteye.com/blog/yuanhsh-2185978 
+https://www.iteye.com/blog/shmilyaw-hotmail-com-2289879 
+
 
 
