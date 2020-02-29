@@ -101,13 +101,20 @@ https://leetcode.com/submissions/detail/299470450/
 
 721. Accounts Merge 
 
-114. Flatten Binary Tree to Linked List 
+leetcode 114. Flatten Binary Tree to Linked List 
+循环：  https://leetcode.com/submissions/detail/307727729/
+这个方法是从根节点开始出发，先检测其左子结点是否存在，如存在则将根节点和其右子节点断开，将左子结点及其后面所有结构一起连到原右子节点的位置，把原右子节点连到元左子结点最后面的右子节点之后。
+递归：  
+是按照右 -> 左 -> 根 这样的后序顺序来遍历的, bottum up 的递归， 用了一个prev的全局变量。
+
+
 https://www.cnblogs.com/nashiyue/p/5313767.html 
 https://www.cnblogs.com/grandyang/p/4293853.html 
-https://blog.csdn.net/gdmmzmj/article/details/64439968 
 https://segmentfault.com/a/1190000010503483 
 https://www.iteye.com/blog/yuanhsh-2185978 
 https://www.iteye.com/blog/shmilyaw-hotmail-com-2289879 
+
+leetcode 349. Intersection of Two Arrays
 
 
 
