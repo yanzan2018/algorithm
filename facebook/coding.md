@@ -115,6 +115,13 @@ https://www.iteye.com/blog/yuanhsh-2185978
 https://www.iteye.com/blog/shmilyaw-hotmail-com-2289879 
 
 leetcode 349. Intersection of Two Arrays
+三种解法：
+1  hashset   https://leetcode.com/submissions/detail/308023576/ 
+2  two pointer   https://leetcode.com/submissions/detail/308036716/
+3  binary search
+
+leetcode 987. Vertical Order Traversal of a Binary Tree
+
 
 
 
