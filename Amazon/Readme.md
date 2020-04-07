@@ -17,3 +17,6 @@ https://personal.utdallas.edu/~dheroy/4331code/book/doc/java/util/PriorityQueue.
 ### 692. Top K Frequent Words
 
 ### 973. K Closest Points to Origin
+
+### 1192. Critical Connections in a Network
+https://blog.csdn.net/Prediction__/article/details/100030166 
