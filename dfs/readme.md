@@ -6,6 +6,10 @@ Since no one is talking about the complexity. I think space is O(L) where L is t
 
 https://leetcode.com/problems/word-search/discuss/27754/what-is-the-time-complexity-for-the-dfs-solution/26775  dfs的时间复杂度分析
 
+https://leetcode.com/submissions/detail/349643754/  java solution
+follow up: if the same letter cell can be used more than once.  For example, Given word = "SSS", return true. Given word = "SES", return true. solution: add  dir (0, 0) to dirs.
+
+
 
 
 
