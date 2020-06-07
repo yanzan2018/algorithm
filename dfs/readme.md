@@ -9,7 +9,10 @@ https://leetcode.com/problems/word-search/discuss/27754/what-is-the-time-complex
 https://leetcode.com/submissions/detail/349643754/  java solution
 follow up: if the same letter cell can be used more than once.  For example, Given word = "SSS", return true. Given word = "SES", return true. solution: add  dir (0, 0) to dirs.
 
+##### 980. Unique Paths III
 
+top down     https://leetcode.com/submissions/detail/350149005/
+bottom up   https://leetcode.com/submissions/detail/350441965/
 
 
 
