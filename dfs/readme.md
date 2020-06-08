@@ -15,6 +15,16 @@ top down     https://leetcode.com/submissions/detail/350149005/
 
 bottom up   https://leetcode.com/submissions/detail/350441965/
 
+https://leetcode.com/problems/unique-paths-iii/solution/  时间复杂度
+
+Complexity Analysis
+
+Time Complexity: O(4^{R*C})O(4 
+R∗C
+ ), where R, CR,C are the number of rows and columns in the grid. (We can find tighter bounds, but such a bound is beyond the scope of this article.)
+
+Space Complexity: O(R*C)O(R∗C).
+
 
 
 ##### 200. Number of Islands   常见的dfs，需要visited数组。根据题意找到一个标识为岛的点开始遍历，即寻找有多少个满足给定条件的连通图。
