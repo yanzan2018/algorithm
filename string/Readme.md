@@ -1,3 +1,11 @@
+
+3. Longest Substring Without Repeating Characters
+https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/  
+
+注意这样的case "tmmzuxt"， 当遍历到最后一个t的时候，之前的t出现的位置是在目前的left之前，这时候要取更大的值。所以注意这句的写法：
+left = Math.max(left, map.get(ch[right])+1);
+
+
 ### Reverse String 
 最常见的做法是iterative的，可以用左右指针同时从前后开始扫描，也可以使用一个stringbuilder，从输入string的尾部开始开始扫描，依次将扫描到的元素加入到stringbuilder中，然后再把这个stringbuilder返回为string。
 
