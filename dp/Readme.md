@@ -6,3 +6,12 @@ https://leetcode.com/submissions/detail/352435005/  参考的网页是https://ww
 另外，Integer[][] memo而不是int[][] memo，因为比如两个字符串相等，s1 = "aab"和 s2 = "aab"，经过计算后的memo也是0，这样区分不出来是计算前还是计算后的。但是使用Integer[][] memo，没计算过的就是null，很明显得到区分。
 
 https://leetcode.com/problems/edit-distance/discuss/159295/Python-solutions-and-intuition
+两个for循环一行一行地填充dp数组
+如下两个单词  w1 = "ab",  w2 = "abc"
+                                          a         b         c 
+index:                          0         1         2         3
+                     0          0         1         2         3
+            a        1          1         0         1         2
+            b        2          2         1         0         1
+                     
+                      
