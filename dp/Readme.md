@@ -16,3 +16,6 @@ index:                          0         1         2         3
                      
 ### 1143. Longest Common Subsequence    
 https://leetcode.com/submissions/detail/352880700/
+
+###  718. Maximum Length of Repeated Subarray  
+https://leetcode.com/problems/maximum-length-of-repeated-subarray/submissions/  注意和1143的区别
