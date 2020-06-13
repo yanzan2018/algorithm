@@ -1,4 +1,4 @@
-72. Edit Distance 
+### 72. Edit Distance 
 
 https://www.jianshu.com/p/8e08a1794aba   
 暴力使用dfs求解，对每一个位置上的字符，都有三种操作的可能性。
@@ -14,4 +14,5 @@ index:                          0         1         2         3
             a        1          1         0         1         2
             b        2          2         1         0         1
                      
-                      
+### 1143. Longest Common Subsequence    
+https://leetcode.com/submissions/detail/352880700/
