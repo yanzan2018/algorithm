@@ -1,0 +1,7 @@
+### 56. Merge Intervals
+#### https://www.youtube.com/watch?v=qKczfGUrFY4
+##### first find the overlapped intervals, then merge it
+you take the larger of the ending values it they overlap
+you just loop through ...
+there's basic two conditions: you check the cur interval and the next interval. If the next interval beginning is less than the current interval end, you found an overlap like in this case. Then you merge them, otherwise you just keep going on your way, and they don't merge. So it's fine. 
+
