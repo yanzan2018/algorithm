@@ -19,3 +19,7 @@ https://leetcode.com/submissions/detail/352880700/
 
 ###  718. Maximum Length of Repeated Subarray  
 https://leetcode.com/problems/maximum-length-of-repeated-subarray/submissions/ 注意和1143的区别
+
+
+### coin change
+https://www.youtube.com/watch?v=uUETHdijzkA
