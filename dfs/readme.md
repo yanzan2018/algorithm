@@ -124,6 +124,9 @@ List<String> input_list = new LinkedList<String>();
 	
 对于subset，画出implicit graph 后，可以看到所有node都是一个解。所以在写dfs的时候，会把所有的curList放到res中。在构建每个解的时候，注意start参数的使用。
 
+subset 的时间复杂度：因为产生了2的N次方个子集，就是相当于调用了这个递归函数共2的n次方的次数，而这个递归函数里有for (int i = start; i < nums.length; i++)，这是O(n)的时间复杂度，所以总的时间复杂度是O（n* 2的n次方）；空间复杂度，递归树最长的深度是n，相当于最长的那个subset,此外递归函数里用到了curList,在整个递归调用中，都是用的同一个curList，其最长为n，所以空间复杂度是2n,如果考虑结果集的话，因为结果集中一共有2的n次方个结果，所以其空间复杂度是O（n* 2的n次方）
+
+
 https://leetcode.com/submissions/detail/253516601/ subset2 注意和permutation2的写法区别 因为permutation的for 循环每次是从头开始的，而subset不会使用之前用过的元素
 
 combination sum2 注意和permutation2的写法区别 因为permutation的for 循环每次是从头开始的，而combination sum2不会使用之前用过的元素
